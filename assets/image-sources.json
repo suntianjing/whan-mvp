@@ -1,0 +1,95 @@
+{
+  "items": [
+    {
+      "id": "nh-23d29e",
+      "name": "长江广电·光谷家",
+      "jiwuId": 1488456,
+      "sourcePage": "https://m.jiwu.com/wh/loupan/1488456.html",
+      "heroUrl": "https://img1-build.jiwu.com/album/auto/2020/05/05/033653896852.jpg",
+      "floorPlanUrl": "https://img2-build.jiwu.com/housetype/auto/2022/08/10/184422179875.jpg",
+      "heroLocal": "assets/heroes/nh-23d29e.jpg",
+      "floorPlanLocal": "assets/floorplans/nh-23d29e.jpg",
+      "floorPlanAreas": [
+        89.14
+      ],
+      "floorPlanRooms": "2室2厅1卫",
+      "attribution": "吉屋网公开楼盘资料 · 效果图/户型图，非承诺实景"
+    },
+    {
+      "id": "nh-028c9f",
+      "name": "万和竞界",
+      "jiwuId": 1517195,
+      "sourcePage": "https://m.jiwu.com/wh/loupan/1517195.html",
+      "heroUrl": "https://img10-build.jiwu.com/album/auto/2023/08/23/123124720610.jpg",
+      "floorPlanUrl": "https://img10-build.jiwu.com/housetype/auto/2023/02/08/203220559229.jpg",
+      "heroLocal": "assets/heroes/nh-028c9f.jpg",
+      "floorPlanLocal": "assets/floorplans/nh-028c9f.jpg",
+      "floorPlanAreas": [
+        125.0
+      ],
+      "floorPlanRooms": "3室2厅2卫",
+      "note": "jiwu无公开~95㎡三居；采用最接近的125㎡三居售楼户型图，标题已按实标注",
+      "attribution": "吉屋网公开楼盘资料 · 效果图/户型图，非承诺实景"
+    },
+    {
+      "id": "nh-242e7e",
+      "name": "招商天青府",
+      "jiwuId": 1662396,
+      "sourcePage": "https://m.jiwu.com/wh/loupan/1662396.html",
+      "heroUrl": "https://img6-build.jiwu.com/album/auto/2025/03/30/093049427974.jpg",
+      "floorPlanUrl": "https://img1-build.jiwu.com/housetype/auto/2025/05/02/183023517376.jpg",
+      "heroLocal": "assets/heroes/nh-242e7e.jpg",
+      "floorPlanLocal": "assets/floorplans/nh-242e7e.jpg",
+      "floorPlanAreas": [
+        107.0
+      ],
+      "floorPlanRooms": "3室2厅2卫",
+      "attribution": "吉屋网公开楼盘资料 · 效果图/户型图，非承诺实景"
+    },
+    {
+      "id": "nh-cbceda",
+      "name": "伟鹏·硅谷小镇",
+      "jiwuId": 1307140,
+      "sourcePage": "https://m.jiwu.com/wh/loupan/1307140.html",
+      "heroUrl": "https://img1-build.jiwu.com/album/auto/2020/07/21/153717986791.jpg",
+      "floorPlanUrl": "https://img10-build.jiwu.com/housetype/auto/2021/06/14/183852691247.jpg",
+      "heroLocal": "assets/heroes/nh-cbceda.jpg",
+      "floorPlanLocal": "assets/floorplans/nh-cbceda.jpg",
+      "floorPlanAreas": [
+        91.0
+      ],
+      "floorPlanRooms": "3室2厅1卫",
+      "attribution": "吉屋网公开楼盘资料 · 效果图/户型图，非承诺实景"
+    },
+    {
+      "id": "nh-048305",
+      "name": "光谷鼎正悦府",
+      "jiwuId": 1332786,
+      "sourcePage": "https://m.jiwu.com/wh/loupan/1332786.html",
+      "heroUrl": "https://img7-build.jiwu.com/album/auto/2021/04/03/06375981391.jpg",
+      "floorPlanUrl": "https://img1-build.jiwu.com/housetype/auto/2021/07/28/034630198361.jpg",
+      "heroLocal": "assets/heroes/nh-048305.jpg",
+      "floorPlanLocal": "assets/floorplans/nh-048305.jpg",
+      "floorPlanAreas": [
+        108.0
+      ],
+      "floorPlanRooms": "3室2厅2卫",
+      "attribution": "吉屋网公开楼盘资料 · 效果图/户型图，非承诺实景"
+    },
+    {
+      "id": "nh-378df6",
+      "name": "城投南山长投·领峯",
+      "jiwuId": 1533876,
+      "sourcePage": "https://m.jiwu.com/wh/loupan/1533876.html",
+      "heroUrl": "https://img7-build.jiwu.com/album/manual/2023/02/25/142312249527.jpg",
+      "floorPlanUrl": "https://img8-build.jiwu.com/housetype/manual/2023/02/26/100634932918.jpg",
+      "heroLocal": "assets/heroes/nh-378df6.jpg",
+      "floorPlanLocal": "assets/floorplans/nh-378df6.jpg",
+      "floorPlanAreas": [
+        107.0
+      ],
+      "floorPlanRooms": "3室2厅2卫",
+      "attribution": "吉屋网公开楼盘资料 · 效果图/户型图，非承诺实景"
+    }
+  ]
+}

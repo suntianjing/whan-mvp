@@ -35,7 +35,7 @@
       "meta": "东湖高新 · 89–178㎡ · 11号线光谷生物园站约0.3–1.1km",
       "heroLabel": "New · 光谷东",
       "heroImage": "assets/heroes/nh-23d29e.jpg",
-      "imageAttribution": "房天下配图 · 项目宣传图，非承诺实景",
+      "imageAttribution": "吉屋网公开楼盘资料 · 效果图/户型图，非承诺实景",
       "orientation": "南北为主（示意）",
       "year": 2026,
       "fitout": "以售楼处公示为准",
@@ -43,7 +43,8 @@
         "title": "主力户型 · 建面约 89㎡",
         "rooms": "两室两厅一卫",
         "svg": "two-bed",
-        "schematic": true
+        "schematic": false,
+        "floorPlanImage": "assets/floorplans/nh-23d29e.jpg"
       },
       "daylight": [
         {
@@ -118,7 +119,7 @@
       "filingPortalLabel": "住更局 · 商品房项目查询",
       "presaleUrl": "http://spfxm.whfgxx.org.cn:8083/zzzz/zz_ysgsspfzb.aspx",
       "sourceUrl": "https://wuhan.newhouse.fang.com/loupan/2610162136.htm",
-      "summary": "长江广电·光谷家 · 公开参考约1.3–1.89万/㎡。户型线稿为示意几何，非官方户型图。"
+      "summary": "长江广电·光谷家 · 公开参考约1.3–1.89万/㎡。户型图来自公开售楼资料（示意参考）。"
     },
     {
       "id": "nh-028c9f",
@@ -141,16 +142,17 @@
       ],
       "meta": "东湖高新 · 95–142㎡ · 19号线新月溪站约0.6km",
       "heroLabel": "New · 光谷东",
-      "heroImage": "assets/heroes/nh-028c9f.png",
-      "imageAttribution": "房天下配图 · 项目宣传图，非承诺实景",
+      "heroImage": "assets/heroes/nh-028c9f.jpg",
+      "imageAttribution": "吉屋网公开楼盘资料 · 效果图/户型图，非承诺实景",
       "orientation": "南北为主（示意）",
       "year": 2026,
       "fitout": "以售楼处公示为准",
       "layout": {
-        "title": "主力户型 · 建面约 95㎡",
-        "rooms": "三室两厅一卫",
+        "title": "主力户型 · 建面约 125㎡",
+        "rooms": "三室两厅两卫",
         "svg": "three-bed-compact",
-        "schematic": true
+        "schematic": false,
+        "floorPlanImage": "assets/floorplans/nh-028c9f.jpg"
       },
       "daylight": [
         {
@@ -225,7 +227,7 @@
       "filingPortalLabel": "住更局 · 商品房项目查询",
       "presaleUrl": "http://spfxm.whfgxx.org.cn:8083/zzzz/zz_ysgsspfzb.aspx",
       "sourceUrl": "https://wuhan.newhouse.fang.com/loupan/2610167158.htm",
-      "summary": "万和竞界 · 二期公开约1.3万/㎡；一期更高。户型线稿为示意几何，非官方户型图。"
+      "summary": "万和竞界 · 二期公开约1.3万/㎡；一期更高。户型图来自公开售楼资料（示意参考）；吉屋公开户型中无~95㎡三居，展示最接近的125㎡三居。"
     },
     {
       "id": "nh-242e7e",
@@ -248,15 +250,16 @@
       "meta": "东湖高新 · 107/130/154㎡ · 19号线新月溪公园站约0.5km",
       "heroLabel": "New · 光谷东",
       "heroImage": "assets/heroes/nh-242e7e.jpg",
-      "imageAttribution": "房天下配图 · 项目宣传图，非承诺实景",
+      "imageAttribution": "吉屋网公开楼盘资料 · 效果图/户型图，非承诺实景",
       "orientation": "南北为主（示意）",
       "year": 2026,
       "fitout": "以售楼处公示为准",
       "layout": {
         "title": "主力户型 · 建面约 107㎡",
-        "rooms": "三室两厅一卫",
+        "rooms": "三室两厅两卫",
         "svg": "three-bed-compact",
-        "schematic": true
+        "schematic": false,
+        "floorPlanImage": "assets/floorplans/nh-242e7e.jpg"
       },
       "daylight": [
         {
@@ -327,7 +330,7 @@
       "filingPortalLabel": "住更局 · 商品房项目查询",
       "presaleUrl": "http://spfxm.whfgxx.org.cn:8083/zzzz/zz_ysgsspfzb.aspx",
       "sourceUrl": "https://wuhan.newhouse.fang.com/loupan/2610172456.htm",
-      "summary": "招商天青府 · 公开参考约1.4–1.45万/㎡。户型线稿为示意几何，非官方户型图。"
+      "summary": "招商天青府 · 公开参考约1.4–1.45万/㎡。户型图来自公开售楼资料（示意参考）。"
     },
     {
       "id": "nh-cbceda",
@@ -351,15 +354,16 @@
       "meta": "东湖高新 · 91–137㎡ · 11号线未来三路站约1km",
       "heroLabel": "New · 光谷东",
       "heroImage": "assets/heroes/nh-cbceda.jpg",
-      "imageAttribution": "房天下配图 · 项目宣传图，非承诺实景",
+      "imageAttribution": "吉屋网公开楼盘资料 · 效果图/户型图，非承诺实景",
       "orientation": "南北为主（示意）",
       "year": 2026,
       "fitout": "以售楼处公示为准",
       "layout": {
         "title": "主力户型 · 建面约 91㎡",
-        "rooms": "两室两厅一卫",
-        "svg": "two-bed",
-        "schematic": true
+        "rooms": "三室两厅一卫",
+        "svg": "three-bed-compact",
+        "schematic": false,
+        "floorPlanImage": "assets/floorplans/nh-cbceda.jpg"
       },
       "daylight": [
         {
@@ -434,7 +438,7 @@
       "filingPortalLabel": "住更局 · 商品房项目查询",
       "presaleUrl": "http://spfxm.whfgxx.org.cn:8083/zzzz/zz_ysgsspfzb.aspx",
       "sourceUrl": "https://wuhan.newhouse.fang.com/loupan/2610157694.htm",
-      "summary": "伟鹏·硅谷小镇 · 公开参考约1.0万/㎡。户型线稿为示意几何，非官方户型图。"
+      "summary": "伟鹏·硅谷小镇 · 公开参考约1.0万/㎡。户型图来自公开售楼资料（示意参考）。"
     },
     {
       "id": "nh-048305",
@@ -457,15 +461,16 @@
       "meta": "东湖高新 · 108–125㎡ · 配套见详情",
       "heroLabel": "New · 光谷东",
       "heroImage": "assets/heroes/nh-048305.jpg",
-      "imageAttribution": "房天下配图 · 项目宣传图，非承诺实景",
+      "imageAttribution": "吉屋网公开楼盘资料 · 效果图/户型图，非承诺实景",
       "orientation": "南北为主（示意）",
       "year": 2026,
       "fitout": "以售楼处公示为准",
       "layout": {
         "title": "主力户型 · 建面约 108㎡",
-        "rooms": "三室两厅一卫",
+        "rooms": "三室两厅两卫",
         "svg": "three-bed-compact",
-        "schematic": true
+        "schematic": false,
+        "floorPlanImage": "assets/floorplans/nh-048305.jpg"
       },
       "daylight": [
         {
@@ -540,7 +545,7 @@
       "filingPortalLabel": "住更局 · 商品房项目查询",
       "presaleUrl": "http://spfxm.whfgxx.org.cn:8083/zzzz/zz_ysgsspfzb.aspx",
       "sourceUrl": "https://wuhan.newhouse.fang.com/loupan/2610159126.htm",
-      "summary": "光谷鼎正悦府 · 门户标价差异大约1.25–2.15万。户型线稿为示意几何，非官方户型图。"
+      "summary": "光谷鼎正悦府 · 门户标价差异大约1.25–2.15万。户型图来自公开售楼资料（示意参考）。"
     },
     {
       "id": "nh-378df6",
@@ -564,15 +569,16 @@
       "meta": "东湖高新 · 107–143㎡ · 11号线约1.2km",
       "heroLabel": "New · 光谷东",
       "heroImage": "assets/heroes/nh-378df6.jpg",
-      "imageAttribution": "房天下配图 · 项目宣传图，非承诺实景",
+      "imageAttribution": "吉屋网公开楼盘资料 · 效果图/户型图，非承诺实景",
       "orientation": "南北为主（示意）",
       "year": 2026,
       "fitout": "以售楼处公示为准",
       "layout": {
         "title": "主力户型 · 建面约 107㎡",
-        "rooms": "三室两厅一卫",
+        "rooms": "三室两厅两卫",
         "svg": "three-bed-compact",
-        "schematic": true
+        "schematic": false,
+        "floorPlanImage": "assets/floorplans/nh-378df6.jpg"
       },
       "daylight": [
         {
@@ -647,7 +653,7 @@
       "filingPortalLabel": "住更局 · 商品房项目查询",
       "presaleUrl": "http://spfxm.whfgxx.org.cn:8083/zzzz/zz_ysgsspfzb.aspx",
       "sourceUrl": "https://wuhan.newhouse.fang.com/loupan/2610159236.htm",
-      "summary": "城投南山长投·领峯 · 公开参考约1.2–1.4万/㎡。户型线稿为示意几何，非官方户型图。"
+      "summary": "城投南山长投·领峯 · 公开参考约1.2–1.4万/㎡。户型图来自公开售楼资料（示意参考）。"
     }
   ]
 }

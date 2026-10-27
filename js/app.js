@@ -865,12 +865,25 @@
       "</p>" +
       priceHtml +
       tagsHtml(item.tags) +
-      '<div class="floor-card"><div class="kicker">Floor Plan · 户型示意' +
-      (layout.schematic !== false ? "（几何示意）" : "") +
-      "</div>" +
-      floorSvg(layout.svg || "three-bed") +
-      '<div class="floor-legend"><span><i style="background:rgba(255,255,255,0.08)"></i>起居</span>' +
-      '<span><i style="border-style:dashed"></i>阳台</span><span><i></i>房间</span></div></div>' +
+      (layout.floorPlanImage
+        ? '<div class="floor-card floor-light"><div class="kicker">Floor Plan · 户型图</div>' +
+          '<img class="floor-plan-img" src="' +
+          esc(layout.floorPlanImage) +
+          '" alt="' +
+          esc((layout.title || "户型图") + (layout.rooms ? " · " + layout.rooms : "")) +
+          '" loading="lazy" />' +
+          (layout.title || layout.rooms
+            ? '<div class="floor-plan-caption">' +
+              esc([layout.title, layout.rooms].filter(Boolean).join(" · ")) +
+              "</div>"
+            : "") +
+          "</div>"
+        : '<div class="floor-card"><div class="kicker">Floor Plan · 户型示意' +
+          (layout.schematic !== false ? "（几何示意）" : "") +
+          "</div>" +
+          floorSvg(layout.svg || "three-bed") +
+          '<div class="floor-legend"><span><i style="background:rgba(255,255,255,0.08)"></i>起居</span>' +
+          '<span><i style="border-style:dashed"></i>阳台</span><span><i></i>房间</span></div></div>') +
       '<div class="floor-card"><div class="kicker">Daylight · 采光评分（示意）</div>' +
       daylight +
       "</div>" +
@@ -1034,7 +1047,7 @@
       cell("采光均分", days) +
       cell("配套", amens) +
       "</div>" +
-      '<p class="caption">精选盘名为光谷东真实项目 · 价格为公开挂牌/在售参考非网签 · 户型图为几何示意</p></div>';
+      '<p class="caption">精选盘名为光谷东真实项目 · 价格为公开挂牌/在售参考非网签 · 户型图来自公开售楼资料（示意参考）</p></div>';
     qsa(".cmp-rm", root).forEach(function (btn) {
       btn.addEventListener("click", function () {
         removeCompare(btn.getAttribute("data-type"), btn.getAttribute("data-id"));
@@ -1126,7 +1139,7 @@
       "<h2>更新节奏</h2><p>" +
       esc(m.cadence || "") +
       "</p>" +
-      "<h2>精选盘说明</h2><p>精选盘名为光谷东真实项目；价格为公开挂牌/在售参考非网签；户型图为几何示意。</p>" +
+      "<h2>精选盘说明</h2><p>精选盘名为光谷东真实项目；价格为公开挂牌/在售参考非网签；户型图来自公开售楼资料（示意参考）。</p>" +
       "<h2>品牌</h2><p>WHAN / 武楼 — 原创品牌示意，不借用第三方航天或汽车品牌名称与标识。</p>" +
       "<footer>WHAN · 武楼<br>武汉楼市分析 MVP</footer></div>";
   }
