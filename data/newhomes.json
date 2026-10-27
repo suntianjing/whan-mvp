@@ -1,0 +1,187 @@
+{
+  "sample": true,
+  "area": "光谷东",
+  "filters": ["全部", "地铁", "学区", "公园", "在售"],
+  "items": [
+    {
+      "id": "nh-yunjing",
+      "name": "云境华庭",
+      "nameNote": "示意楼盘",
+      "area": "光谷东",
+      "district": "东湖高新",
+      "price": 2.80,
+      "priceUnit": "万/㎡ 起",
+      "status": "在售",
+      "areaRange": "89–143㎡",
+      "tags": ["地铁", "学区", "示意"],
+      "meta": "东湖高新 · 建面 89–143㎡ · 近 11 号线",
+      "heroLabel": "New · 示例",
+      "orientation": "南北为主",
+      "year": 2026,
+      "fitout": "毛坯 / 精装可选",
+      "layout": {
+        "title": "B 户型 · 建面约 118㎡",
+        "rooms": "三室两厅两卫",
+        "svg": "three-bed"
+      },
+      "daylight": [
+        {"label": "主卧", "score": 90},
+        {"label": "客厅", "score": 86},
+        {"label": "次卧", "score": 78},
+        {"label": "厨房", "score": 64}
+      ],
+      "amenities": [
+        {"name": "地铁 11 号线 · 示意站", "distance": "约 620 m"},
+        {"name": "光谷东小学（示意）", "distance": "约 1.0 km"},
+        {"name": "综合商场", "distance": "约 1.4 km"},
+        {"name": "三甲医院 · 示意", "distance": "约 3.6 km"},
+        {"name": "公园绿地", "distance": "约 800 m"}
+      ],
+      "specs": [
+        {"k": "建面", "v": "约 118 ㎡"},
+        {"k": "套内", "v": "约 97 ㎡"},
+        {"k": "朝向", "v": "南北通透"},
+        {"k": "楼层", "v": "中高 / 32"},
+        {"k": "交付年", "v": "2026（示意）"},
+        {"k": "装修", "v": "精装可选"}
+      ],
+      "filingUrl": "https://fgj.wuhan.gov.cn/",
+      "summary": "示意新盘，侧重地铁与学区标签；价格为示例挂牌起点。"
+    },
+    {
+      "id": "nh-yinghu",
+      "name": "映湖云著",
+      "nameNote": "示意楼盘",
+      "area": "光谷东",
+      "district": "光谷东",
+      "price": 2.45,
+      "priceUnit": "万/㎡ 起",
+      "status": "在售",
+      "areaRange": "98–128㎡",
+      "tags": ["公园", "地铁", "示意"],
+      "meta": "光谷东 · 建面 98–128㎡ · 临湖公园",
+      "heroLabel": "New · 示例",
+      "orientation": "南向为主",
+      "year": 2025,
+      "fitout": "精装交付（示意）",
+      "layout": {
+        "title": "C 户型 · 建面约 108㎡",
+        "rooms": "三室两厅一卫",
+        "svg": "three-bed-compact"
+      },
+      "daylight": [
+        {"label": "主卧", "score": 84},
+        {"label": "客厅", "score": 91},
+        {"label": "次卧", "score": 72},
+        {"label": "厨房", "score": 58}
+      ],
+      "amenities": [
+        {"name": "地铁 11 号线 · 示意站", "distance": "约 1.1 km"},
+        {"name": "湖滨公园（示意）", "distance": "约 350 m"},
+        {"name": "社区商业", "distance": "约 600 m"},
+        {"name": "综合商场", "distance": "约 2.0 km"},
+        {"name": "三甲医院 · 示意", "distance": "约 4.2 km"}
+      ],
+      "specs": [
+        {"k": "建面", "v": "约 108 ㎡"},
+        {"k": "套内", "v": "约 89 ㎡"},
+        {"k": "朝向", "v": "南向为主"},
+        {"k": "楼层", "v": "中 / 28"},
+        {"k": "交付年", "v": "2025（示意）"},
+        {"k": "装修", "v": "精装"}
+      ],
+      "filingUrl": "https://fgj.wuhan.gov.cn/",
+      "summary": "示意临湖改善盘；配套以公园距离见长。"
+    },
+    {
+      "id": "nh-qinglan",
+      "name": "青岚里",
+      "nameNote": "示意楼盘",
+      "area": "光谷东",
+      "district": "光谷东",
+      "price": 2.18,
+      "priceUnit": "万/㎡ 起",
+      "status": "在售",
+      "areaRange": "79–112㎡",
+      "tags": ["地铁", "示意"],
+      "meta": "光谷东 · 建面 79–112㎡ · 刚需向",
+      "heroLabel": "New · 示例",
+      "orientation": "南北 / 南向",
+      "year": 2026,
+      "fitout": "毛坯为主",
+      "layout": {
+        "title": "A 户型 · 建面约 89㎡",
+        "rooms": "两室两厅一卫",
+        "svg": "two-bed"
+      },
+      "daylight": [
+        {"label": "主卧", "score": 80},
+        {"label": "客厅", "score": 85},
+        {"label": "次卧", "score": 70},
+        {"label": "厨房", "score": 60}
+      ],
+      "amenities": [
+        {"name": "地铁 11 号线 · 示意站", "distance": "约 750 m"},
+        {"name": "光谷东小学（示意）", "distance": "约 1.6 km"},
+        {"name": "综合商场", "distance": "约 1.8 km"},
+        {"name": "社区商业", "distance": "约 400 m"},
+        {"name": "公园绿地", "distance": "约 1.2 km"}
+      ],
+      "specs": [
+        {"k": "建面", "v": "约 89 ㎡"},
+        {"k": "套内", "v": "约 72 ㎡"},
+        {"k": "朝向", "v": "南北"},
+        {"k": "楼层", "v": "中低 / 26"},
+        {"k": "交付年", "v": "2026（示意）"},
+        {"k": "装修", "v": "毛坯"}
+      ],
+      "filingUrl": "https://fgj.wuhan.gov.cn/",
+      "summary": "示意刚需向新盘；总价门槛相对更低。"
+    },
+    {
+      "id": "nh-xinghe",
+      "name": "星河序",
+      "nameNote": "示意楼盘",
+      "area": "光谷东",
+      "district": "东湖高新",
+      "price": 2.62,
+      "priceUnit": "万/㎡ 起",
+      "status": "在售",
+      "areaRange": "105–145㎡",
+      "tags": ["学区", "公园", "示意"],
+      "meta": "东湖高新 · 建面 105–145㎡ · 学区向",
+      "heroLabel": "New · 示例",
+      "orientation": "南北通透",
+      "year": 2027,
+      "fitout": "精装交付（示意）",
+      "layout": {
+        "title": "D 户型 · 建面约 128㎡",
+        "rooms": "四室两厅两卫",
+        "svg": "four-bed"
+      },
+      "daylight": [
+        {"label": "主卧", "score": 93},
+        {"label": "客厅", "score": 88},
+        {"label": "次卧", "score": 81},
+        {"label": "厨房", "score": 67}
+      ],
+      "amenities": [
+        {"name": "地铁 11 号线 · 示意站", "distance": "约 1.3 km"},
+        {"name": "光谷东小学（示意）", "distance": "约 700 m"},
+        {"name": "综合商场", "distance": "约 1.1 km"},
+        {"name": "三甲医院 · 示意", "distance": "约 3.2 km"},
+        {"name": "公园绿地", "distance": "约 550 m"}
+      ],
+      "specs": [
+        {"k": "建面", "v": "约 128 ㎡"},
+        {"k": "套内", "v": "约 105 ㎡"},
+        {"k": "朝向", "v": "南北通透"},
+        {"k": "楼层", "v": "高 / 33"},
+        {"k": "交付年", "v": "2027（示意）"},
+        {"k": "装修", "v": "精装"}
+      ],
+      "filingUrl": "https://fgj.wuhan.gov.cn/",
+      "summary": "示意学区改善盘；户型偏大。"
+    }
+  ]
+}

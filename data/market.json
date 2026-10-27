@@ -1,0 +1,53 @@
+{
+  "brand": "WHAN",
+  "brandZh": "武楼",
+  "focusArea": "光谷东",
+  "city": "武汉",
+  "sample": true,
+  "updatedAt": "2026-10-27T10:00:00+08:00",
+  "updatedLabel": "2026-10-27 10:00（示例）",
+  "referencePrice": {
+    "value": 2.46,
+    "unit": "万/㎡",
+    "label": "挂牌参考均价",
+    "note": "示例"
+  },
+  "judgment": "挂牌量缓增、议价空间打开；地铁沿线次新抗跌相对更好。观望可优先看户型采光与通勤半径，不宜追高远郊纯新盘溢价。（示例判断）",
+  "metrics": [
+    {
+      "id": "ask",
+      "label": "挂牌均价",
+      "value": "2.46",
+      "delta": "万/㎡ · 周环比 −0.8%",
+      "trend": "down"
+    },
+    {
+      "id": "deal",
+      "label": "成交参考",
+      "value": "2.19",
+      "delta": "万/㎡ · 周环比 +0.3%",
+      "trend": "up"
+    },
+    {
+      "id": "supply",
+      "label": "新增挂牌",
+      "value": "186",
+      "delta": "套 · 较上周 +12%",
+      "trend": "down"
+    }
+  ],
+  "cityPulse": {
+    "title": "光谷东市场脉搏",
+    "en": "City Pulse · Wuhan",
+    "status": "本周更新 · 示例数据"
+  },
+  "curatedNewIds": ["nh-yunjing", "nh-yinghu", "nh-qinglan"],
+  "curatedSecondhandIds": ["sh-yunqi-118", "sh-muye-96"],
+  "sources": [
+    "武汉市住房保障和房屋管理局公开统计（示意引用）",
+    "光谷东板块挂牌与成交样本整理（示例）",
+    "地铁与配套距离为步行/直线示意，非测绘成果"
+  ],
+  "cadence": "计划每日更新 data/market.json 中的参考价与指标；新房/二手精选按周轮换。",
+  "disclaimer": "本站全部数字与楼盘名为示例数据，仅供产品演示，不构成交易或投资建议。备案信息请以武汉住更局公开渠道为准。"
+}
