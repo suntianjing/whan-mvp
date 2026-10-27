@@ -97,17 +97,45 @@ def apply(market: dict[str, Any], snap: dict[str, Any]) -> dict[str, Any]:
     area_delta, area_trend = fmt_mom(mom.get("cityHousingAreaPct"))
 
     daily_note = ""
+    daily_meta = {
+        "available": False,
+        "flag": "daily_unavailable_use_monthly",
+        "messageZh": "日表暂不可用，已用月报",
+    }
     if DAILY.exists():
         try:
             daily = json.loads(DAILY.read_text(encoding="utf-8"))
-            if not daily.get("ok"):
-                daily_note = "每日成交页暂不可解析，指标以月报为准。"
+            city = daily.get("city") or {}
+            dh = daily.get("donghuGaoxin") or {}
+            daily_ok = bool(daily.get("ok") or daily.get("available")) and city.get("housingUnits") is not None
+            daily_meta = {
+                "available": daily_ok,
+                "flag": daily.get("flag") or ("daily_ok" if daily_ok else "daily_unavailable_use_monthly"),
+                "messageZh": daily.get("messageZh")
+                or ("日表已接入" if daily_ok else "日表暂不可用，已用月报"),
+                "date": daily.get("date") or daily.get("numbersDate"),
+                "title": daily.get("title"),
+                "statWindow": daily.get("statWindow"),
+                "cityHousingUnits": city.get("housingUnits"),
+                "cityHousingAreaSqm": city.get("housingAreaSqm"),
+                "donghuHousingUnits": dh.get("housingUnits"),
+                "donghuHousingAreaSqm": dh.get("housingAreaSqm"),
+                "detailUrl": daily.get("detailUrl"),
+                "imageUrl": daily.get("imageUrl") or daily.get("imageUrlNumbers"),
+                "url": daily.get("url"),
+                "fetchedAt": daily.get("fetchedAt"),
+                "extractMethod": daily.get("extractMethod"),
+            }
+            if not daily_ok:
+                daily_note = "日表暂不可用，已用月报。"
         except (json.JSONDecodeError, OSError):
-            pass
+            daily_note = "日表暂不可用，已用月报。"
 
     status = f"{period_zh}月报已接入"
-    if daily_note:
-        status += " · 无每日表"
+    if daily_meta.get("available") and daily_meta.get("date"):
+        status += f" · {daily_meta['date'][5:].replace('-', '-')} 日表"
+    elif daily_note:
+        status += " · 日表暂不可用"
 
     market = dict(market)
     market["sample"] = False
@@ -164,6 +192,7 @@ def apply(market: dict[str, Any], snap: dict[str, Any]) -> dict[str, Any]:
         "en": "City Pulse · Wuhan",
         "status": status,
     }
+    market["dailyStats"] = daily_meta
     market["sources"] = [
         f"武汉市住房和城市更新局《{period_zh}新建商品房成交统计情况》 {snap['url']}",
         "东湖高新区商品住房成交作为光谷东聚焦的公开行政区代理指标",
@@ -172,7 +201,7 @@ def apply(market: dict[str, Any], snap: dict[str, Any]) -> dict[str, Any]:
     market["cadence"] = (
         "每日可运行 scripts/fetch_zgj_stats.py → apply_official_to_market.py → "
         "generate-embed.py；有新月报时刷新行情指标。每日成交列表页目前为 JS/外链，"
-        "暂以月报 + 更新时间戳为准。"
+        "界面提示「日表暂不可用，已用月报」。"
     )
     market["disclaimer"] = (
         "行情指标（全市/东湖高新商品住房成交套数与面积及环比）来自武汉市住房和城市更新局"

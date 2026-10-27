@@ -1,0 +1,312 @@
+{
+  "meta": {
+    "plate": "光谷东",
+    "fetchedAt": "2026-10-27+08:00",
+    "disclaimer": "单价为公开参考挂牌/在售标价，非网签成交价"
+  },
+  "plateIndices": {
+    "secondhandListingAvg": {
+      "value": 12991,
+      "unit": "元/㎡",
+      "asOf": "2026-10-26",
+      "source": "安居客光谷东",
+      "url": "https://m.anjuke.com/wh/trendency/hongshana-q-ggdwh/"
+    },
+    "newHomeAvg": {
+      "value": 17115,
+      "unit": "元/㎡",
+      "asOf": "2026-10",
+      "source": "武汉购房网",
+      "url": "http://m.goufang.com/wh/bankuaijiage/2/7"
+    }
+  },
+  "filingPortal": "http://spfxm.whfgxx.org.cn:8083/spfxmcx/spfcx_index.aspx",
+  "presalePortal": "http://spfxm.whfgxx.org.cn:8083/zzzz/zz_ysgsspfzb.aspx",
+  "newhomes": [
+    {
+      "name": "长江广电·光谷家",
+      "priceWanPerM2": 1.5,
+      "priceNote": "公开参考约1.3–1.89万/㎡",
+      "areas": "89–178㎡",
+      "tags": [
+        "地铁",
+        "学区"
+      ],
+      "subway": "11号线光谷生物园站约0.3–1.1km",
+      "school": "华师武汉新城实验小学（2026-2027划片）",
+      "developer": "湖北长江广电置业有限责任公司",
+      "filingHint": "长江广电置业 / 光谷家",
+      "pageUrl": "https://wuhan.newhouse.fang.com/loupan/2610162136.htm",
+      "heroImageUrl": "https://imgwcs2.soufunimg.com/house/2022_08/09/c49efc2d-b896-41dd-bcbb-4a418bb055af.jpg",
+      "lat": 30.48,
+      "lng": 114.52,
+      "fit100": true
+    },
+    {
+      "name": "香港置地·元庐",
+      "priceWanPerM2": 1.95,
+      "priceNote": "公开参考约1.8–2.1万/㎡",
+      "areas": "115–235㎡",
+      "tags": [
+        "学区"
+      ],
+      "subway": "有轨电车L2高科园路站",
+      "school": "光谷一小云溪小学（2026-2027）",
+      "developer": "武汉怡置星辉房地产开发有限公司",
+      "filingHint": "东湖开发区高科园路033地块",
+      "pageUrl": "https://wuhan.newhouse.fang.com/loupan/2610162242.htm",
+      "heroImageUrl": "https://imgwcs2.soufunimg.com/house/2022_02/18/b2975a13-6e39-4218-bfcd-f698f186d655.jpg",
+      "lat": 30.49,
+      "lng": 114.53,
+      "fit100": false
+    },
+    {
+      "name": "万和竞界",
+      "priceWanPerM2": 1.3,
+      "priceNote": "二期公开约1.3万/㎡；一期更高",
+      "areas": "95–142㎡",
+      "tags": [
+        "地铁",
+        "学区"
+      ],
+      "subway": "19号线新月溪站约0.6km",
+      "school": "光谷一小云溪小学",
+      "developer": "武汉光谷新文化投资发展有限公司",
+      "filingHint": "光谷国际新文化电竞中心",
+      "pageUrl": "https://wuhan.newhouse.fang.com/loupan/2610167158.htm",
+      "heroImageUrl": "https://imgwcs2.soufunimg.com/house/2023_08/02/33f2a6f4-6839-4e80-bfce-12c3d017c9a3.png",
+      "lat": 30.485,
+      "lng": 114.535,
+      "fit100": true
+    },
+    {
+      "name": "招商天青府",
+      "priceWanPerM2": 1.42,
+      "priceNote": "公开参考约1.4–1.45万/㎡",
+      "areas": "107/130/154㎡",
+      "tags": [
+        "地铁"
+      ],
+      "subway": "19号线新月溪公园站约0.5km",
+      "school": null,
+      "developer": "武汉菁英房地产开发有限公司",
+      "filingHint": "招商天青府 / 菁英房地产",
+      "pageUrl": "https://wuhan.newhouse.fang.com/loupan/2610172456.htm",
+      "heroImageUrl": "http://imgwcs2.soufunimg.com/house/2025_03/25/de9aafbb-c855-46dc-9580-ddeb733b98ed.jpg",
+      "lat": 30.482,
+      "lng": 114.538,
+      "fit100": true
+    },
+    {
+      "name": "伟鹏·硅谷小镇",
+      "priceWanPerM2": 1.0,
+      "priceNote": "公开参考约1.0万/㎡",
+      "areas": "91–137㎡",
+      "tags": [
+        "地铁",
+        "学区"
+      ],
+      "subway": "11号线未来三路站约1km",
+      "school": "光谷育才小学",
+      "developer": "硅谷智恒（武汉）科技产业发展有限公司",
+      "filingHint": "伟鹏硅谷小镇",
+      "pageUrl": "https://wuhan.newhouse.fang.com/loupan/2610157694.htm",
+      "heroImageUrl": "https://imgwcs2.soufunimg.com/house/2021_03/11/c33df09c-b2d2-4d7e-95ef-945f9e098ace.jpg",
+      "lat": 30.47,
+      "lng": 114.55,
+      "fit100": true
+    },
+    {
+      "name": "光谷鼎正悦府",
+      "priceWanPerM2": 1.5,
+      "priceNote": "门户标价差异大约1.25–2.15万",
+      "areas": "108–125㎡",
+      "tags": [
+        "学区"
+      ],
+      "subway": null,
+      "school": "光谷第十八小学",
+      "developer": "湖北鼎正景明置业",
+      "filingHint": "鼎正悦府",
+      "pageUrl": "https://wuhan.newhouse.fang.com/loupan/2610159126.htm",
+      "heroImageUrl": "https://imgwcs2.soufunimg.com/house/2021_06/21/e7cd63cc-28fc-45ba-a60b-05e8d4270257.jpg",
+      "lat": 30.488,
+      "lng": 114.525,
+      "fit100": true
+    },
+    {
+      "name": "城投南山长投·领峯",
+      "priceWanPerM2": 1.3,
+      "priceNote": "公开参考约1.2–1.4万/㎡",
+      "areas": "107–143㎡",
+      "tags": [
+        "地铁",
+        "学区"
+      ],
+      "subway": "11号线约1.2km",
+      "school": "华师武汉新城实验小学",
+      "developer": "武汉合跃建设发展有限公司",
+      "filingHint": "领峯 / 合跃建设",
+      "pageUrl": "https://wuhan.newhouse.fang.com/loupan/2610159236.htm",
+      "heroImageUrl": "https://imgwcs2.soufunimg.com/house/2022_04/08/9479a2ec-48e5-49c6-b71a-184a4af2c59c.jpg",
+      "lat": 30.486,
+      "lng": 114.528,
+      "fit100": true
+    },
+    {
+      "name": "宝业·璞园",
+      "priceWanPerM2": 1.5,
+      "priceNote": "公开约1.35–1.75万/㎡",
+      "areas": "98–140㎡",
+      "tags": [
+        "学区",
+        "地铁"
+      ],
+      "subway": "地铁沿线（站距待现场核实）",
+      "school": "光谷第十七小学",
+      "developer": "武汉宝城置业",
+      "filingHint": "宝业璞园",
+      "pageUrl": "https://www.fang.com/xinfang/wuhan-2610163998/",
+      "heroImageUrl": null,
+      "lat": 30.484,
+      "lng": 114.532,
+      "fit100": true
+    }
+  ],
+  "secondhand": [
+    {
+      "name": "中建星光城一期",
+      "priceWanPerM2": 1.33,
+      "year": "2021–2022",
+      "areas": "96–109㎡三房为主",
+      "tags": [
+        "地铁",
+        "学区"
+      ],
+      "subway": "11号线光谷生物园约0.9km",
+      "school": "光谷二小玉林小学",
+      "pageUrl": "https://mobile.anjuke.com/esf/wh-cm1240744/",
+      "heroImageUrl": null,
+      "lat": 30.481,
+      "lng": 114.515,
+      "fit100": true
+    },
+    {
+      "name": "中建星光城二期",
+      "priceWanPerM2": 1.24,
+      "year": "约2022",
+      "areas": "98–116㎡",
+      "tags": [
+        "地铁",
+        "学区"
+      ],
+      "subway": "11号线光谷生物园约0.9km",
+      "school": "光谷二小玉林小学",
+      "pageUrl": "https://mobile.anjuke.com/esf/wh-cm1673645/",
+      "heroImageUrl": null,
+      "lat": 30.48,
+      "lng": 114.516,
+      "fit100": true
+    },
+    {
+      "name": "中粮光谷祥云",
+      "priceWanPerM2": 1.45,
+      "year": "约2021–2022",
+      "areas": "103–117㎡",
+      "tags": [
+        "地铁",
+        "学区"
+      ],
+      "subway": "11号线光谷生物园约0.35km",
+      "school": "华师武汉新城实验小学",
+      "pageUrl": "https://wuhan.esf.fang.com/loupan/2610155776.htm",
+      "heroImageUrl": null,
+      "lat": 30.479,
+      "lng": 114.512,
+      "fit100": true
+    },
+    {
+      "name": "绿地光谷中心城",
+      "priceWanPerM2": 1.35,
+      "year": "约2019–2020",
+      "areas": "101–105㎡",
+      "tags": [
+        "地铁",
+        "学区"
+      ],
+      "subway": "光谷五路站约0.66km",
+      "school": "华师武汉新城实验小学",
+      "pageUrl": "https://mobile.anjuke.com/esf/wh-cm1236559/",
+      "heroImageUrl": null,
+      "lat": 30.49,
+      "lng": 114.54,
+      "fit100": true
+    },
+    {
+      "name": "联投驿园",
+      "priceWanPerM2": 1.45,
+      "year": "约2018–2019",
+      "areas": "101–125㎡",
+      "tags": [
+        "地铁",
+        "学区"
+      ],
+      "subway": "11号线光谷六路站",
+      "school": "光谷第十七小学",
+      "pageUrl": "https://mobile.anjuke.com/esf/wh-cm1001788/",
+      "heroImageUrl": null,
+      "lat": 30.492,
+      "lng": 114.545,
+      "fit100": true
+    },
+    {
+      "name": "新城璞樾门第",
+      "priceWanPerM2": 1.4,
+      "year": "约2021",
+      "areas": "108–119㎡",
+      "tags": [
+        "学区"
+      ],
+      "subway": "近11号线",
+      "school": "光谷第十八小学",
+      "pageUrl": "https://wuhan.esf.fang.com/loupan/2610155904.htm",
+      "heroImageUrl": null,
+      "lat": 30.487,
+      "lng": 114.53,
+      "fit100": true
+    },
+    {
+      "name": "龙湖中锦·光谷城香颂",
+      "priceWanPerM2": 1.45,
+      "year": "约2019–2023",
+      "areas": "96/124㎡",
+      "tags": [
+        "学区"
+      ],
+      "subway": "光谷四路板块11号线沿线",
+      "school": "光谷第十八小学",
+      "pageUrl": "https://mobile.anjuke.com/esf/wh-cm1291547/",
+      "heroImageUrl": null,
+      "lat": 30.483,
+      "lng": 114.522,
+      "fit100": true
+    },
+    {
+      "name": "中海光谷东麓",
+      "priceWanPerM2": 1.03,
+      "year": "约2022–2023",
+      "areas": "89/105/118㎡",
+      "tags": [
+        "地铁",
+        "学区"
+      ],
+      "subway": "11号线未来三路约0.36km",
+      "school": "武汉新城中心小学",
+      "pageUrl": "https://www.anjuke.com/wuhan/cm1403141/",
+      "heroImageUrl": "https://pic1.ajkimg.com/display/ajk/5a5d813f4db9f8ca03c9fe32e412b7a9/360x312c.jpg",
+      "lat": 30.472,
+      "lng": 114.548,
+      "fit100": true
+    }
+  ]
+}

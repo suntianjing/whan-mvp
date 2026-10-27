@@ -14,7 +14,7 @@ python3 -m http.server 8765
 # 浏览器访问 http://127.0.0.1:8765/
 ```
 
-底部导航：**行情 · 新房 · 二手 · 说明**。详情页从列表或首页卡片进入。
+底部导航：**行情 · 新房 · 二手 · 对比 · 说明**。详情页从列表或首页卡片进入。
 
 ### 离线 / 直接打开 `index.html`
 
@@ -34,7 +34,8 @@ whan-mvp/
 ├── new.html                # 新房列表
 ├── secondhand.html         # 二手列表
 ├── detail.html             # 详情（?type=new|sh&id=…）
-├── about.html              # 说明 / 数据口径
+├── compare.html            # 对比（localStorage）
+├── about.html              # 说明 / 收藏 / 数据口径
 ├── css/styles.css          # 视觉 tokens 与布局
 ├── js/app.js               # 加载数据、渲染、筛选、详情
 ├── js/data-embed.js        # 内嵌数据（由脚本生成）
@@ -43,11 +44,12 @@ whan-mvp/
 │   ├── newhomes.json       # 新房列表 + 详情字段
 │   └── secondhand.json     # 二手列表 + 详情字段
 ├── scripts/
-│   ├── fetch_zgj_stats.py          # 住更局月报抓取
+│   ├── fetch_zgj_stats.py          # 住更局月报 + history
+│   ├── fetch_daily.py              # 日表 ASPX 列表/JPEG/OCR
 │   ├── apply_official_to_market.py # 合并进 market.json
 │   ├── generate-embed.py           # JSON → data-embed.js
 │   └── update-note.md              # 每日更新作业说明
-├── data/official/          # latest_monthly.json 等快照
+├── data/official/          # latest_monthly / history_monthly / latest_daily
 └── README.md
 ```
 
@@ -80,11 +82,11 @@ git add -A && git commit -m "chore: refresh official housing stats" && git push 
 
 ## 页面能力
 
-1. **行情**：光谷东大参考价、一行判断、3 枚指标芯片、精选新房/二手、更新时间戳、底栏  
-2. **新房**：示意筛选芯片 + 光谷东示意楼盘列表（地铁/学区等标签）  
-3. **二手**：约 100㎡ 主力段精选  
-4. **详情**：hero、价格、户型 SVG 线稿、采光分、配套距离、规格；CTA「加入对比」「查看备案」（住更局占位链接）  
-5. **说明**：示例数据声明、来源示意、更新节奏  
+1. **行情**：月报 KPI、日表网签、板块挂牌指数、月度趋势图、判断文案、精选楼盘  
+2. **新房 / 二手**：真实项目名 + 公开挂牌参考价；价格带/地铁/学区等客户端筛选；收藏与加入对比  
+3. **对比**：localStorage 2–3 项并排（价格/面积/朝向/采光/配套）  
+4. **详情**：heroImage、户型示意、采光、配套、OSM 地图、备案查询（商品房项目查询）、来源页  
+5. **说明**：官方 vs 挂牌 vs 示意字段、日表状态、本地收藏列表、更新节奏  
 
 ## 预览原稿
 

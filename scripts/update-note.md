@@ -59,3 +59,11 @@ git commit && git push origin main
 ## 责任边界
 
 行情数字来自住更局公开月报，须保留来源链接与「楼盘示意」边界；正式对外前由业务确认免责声明与引用合规。
+
+## Daily ASPX path (2026-10)
+
+- List: `http://119.97.201.20/spfcjtj/Sectionlist.aspx?pagenum=1`
+- Detail GUID → `image.aspx?ID={GUID}` JPEG table (HTML has no numbers)
+- Script: `python3 scripts/fetch_daily.py` (downloads JPEG; OCR if tesseract+chi_sim; else keeps last verified JSON)
+- Verified snapshot example: `/workspace/whan-screenshots/daily-stats-2026-10-26.json` → `data/official/latest_daily.json`
+- When OCR fails: browser extract → save JSON → copy into `latest_daily.json` with `ok:true` / city / donghuGaoxin

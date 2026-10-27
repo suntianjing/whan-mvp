@@ -4,8 +4,8 @@
   "focusArea": "光谷东",
   "city": "武汉",
   "sample": false,
-  "updatedAt": "2026-10-27T16:42:28+08:00",
-  "updatedLabel": "2026-10-27 16:42（住更局月报）",
+  "updatedAt": "2026-10-27T17:04:17+08:00",
+  "updatedLabel": "2026-10-27 17:04（住更局月报）",
   "referencePrice": {
     "value": 1353,
     "unit": "套",
@@ -42,24 +42,24 @@
   "cityPulse": {
     "title": "光谷东市场脉搏",
     "en": "City Pulse · Wuhan",
-    "status": "2026年9月月报已接入 · 无每日表"
+    "status": "2026年9月月报已接入 · 10-26 日表"
   },
   "curatedNewIds": [
-    "nh-yunjing",
-    "nh-yinghu",
-    "nh-qinglan"
+    "nh-23d29e",
+    "nh-028c9f",
+    "nh-242e7e"
   ],
   "curatedSecondhandIds": [
-    "sh-yunqi-118",
-    "sh-muye-96"
+    "sh-553e27",
+    "sh-94a1b7"
   ],
   "sources": [
     "武汉市住房和城市更新局《2026年9月新建商品房成交统计情况》 https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/202610/t20261010_2858776.shtml",
     "东湖高新区商品住房成交作为光谷东聚焦的公开行政区代理指标",
     "楼盘精选卡片仍为示意样本，非备案核验结果；地铁/配套距离为步行示意"
   ],
-  "cadence": "每日可运行 scripts/fetch_zgj_stats.py → apply_official_to_market.py → generate-embed.py；有新月报时刷新行情指标。每日成交列表页目前为 JS/外链，暂以月报 + 更新时间戳为准。",
-  "disclaimer": "行情指标（全市/东湖高新商品住房成交套数与面积及环比）来自武汉市住房和城市更新局公开月报，由本站脚本抓取汇总；楼盘卡片名称与报价仍为示意，仅供产品演示，不构成交易或投资建议。备案信息请以住更局公开渠道为准。 每日成交页暂不可解析，指标以月报为准。",
+  "cadence": "每日可运行 scripts/fetch_zgj_stats.py → apply_official_to_market.py → generate-embed.py；有新月报时刷新行情指标。每日成交列表页目前为 JS/外链，界面提示「日表暂不可用，已用月报」。",
+  "disclaimer": "行情指标（全市/东湖高新商品住房成交套数与面积及环比）来自武汉市住房和城市更新局公开月报，由本站脚本抓取汇总；楼盘卡片名称与报价仍为示意，仅供产品演示，不构成交易或投资建议。备案信息请以住更局公开渠道为准。",
   "official": {
     "period": "2026-09",
     "periodLabel": "2026年9月",
@@ -79,5 +79,59 @@
       "donghuHousingAreaPct": -27.74
     },
     "sourceOrg": "武汉市住房和城市更新局"
+  },
+  "dailyStats": {
+    "available": true,
+    "flag": "daily_ok",
+    "messageZh": "日表已接入（网签备案）",
+    "date": "2026-10-26",
+    "title": "2026年10月26日新建商品房网签备案统计情况",
+    "statWindow": "2026-10-25 17:00:00 至 2026-10-26 17:00:00",
+    "cityHousingUnits": 415,
+    "cityHousingAreaSqm": 48638.46,
+    "donghuHousingUnits": 19,
+    "donghuHousingAreaSqm": 2477.08,
+    "detailUrl": "http://119.97.201.20/spfcjtj/Content2.aspx?ID=15EDF8F96CBD46B2ABE5AD3D1B825C95",
+    "imageUrl": "http://119.97.201.20/spfcjtj/image.aspx?ID=15EDF8F96CBD46B2ABE5AD3D1B825C95",
+    "url": "http://119.97.201.20/spfcjtj/Sectionlist.aspx?pagenum=1",
+    "fetchedAt": "2026-10-27T17:00:04+08:00",
+    "extractMethod": "human_verified"
+  },
+  "fieldLegend": {
+    "official": [
+      "全市/东湖高新月报成交",
+      "环比与 history_monthly 趋势",
+      "日表网签套数/面积",
+      "月报/日表原文链接"
+    ],
+    "listing_public": [
+      "项目/小区名称",
+      "公开参考挂牌单价",
+      "板块挂牌指数",
+      "来源页 sourceUrl",
+      "备案查询入口"
+    ],
+    "sample_schematic": [
+      "户型线稿几何",
+      "采光评分",
+      "部分配套步行距离",
+      "经纬度近似点"
+    ]
+  },
+  "plateIndices": {
+    "secondhandListingAvg": {
+      "value": 12991,
+      "unit": "元/㎡",
+      "asOf": "2026-10-26",
+      "source": "安居客光谷东",
+      "url": "https://m.anjuke.com/wh/trendency/hongshana-q-ggdwh/"
+    },
+    "newHomeAvg": {
+      "value": 17115,
+      "unit": "元/㎡",
+      "asOf": "2026-10",
+      "source": "武汉购房网",
+      "url": "http://m.goufang.com/wh/bankuaijiage/2/7"
+    }
   }
 }

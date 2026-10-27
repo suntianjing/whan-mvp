@@ -1,187 +1,653 @@
 {
-  "sample": true,
+  "sample": false,
   "area": "光谷东",
-  "filters": ["全部", "地铁", "学区", "公园", "在售"],
+  "priceBasis": "公开参考挂牌/在售标价，非网签成交价",
+  "filters": [
+    "全部",
+    "地铁",
+    "学区",
+    "~100㎡",
+    "在售",
+    "≤1.4万",
+    "1.4–1.6万",
+    "≥1.6万"
+  ],
   "items": [
     {
-      "id": "nh-yunjing",
-      "name": "云境华庭",
-      "nameNote": "示意楼盘",
+      "id": "nh-23d29e",
+      "name": "长江广电·光谷家",
+      "nameNote": "公开参考挂牌/在售标价 · 非网签",
+      "sample": false,
       "area": "光谷东",
       "district": "东湖高新",
-      "price": 2.80,
+      "price": 1.5,
       "priceUnit": "万/㎡ 起",
+      "priceNote": "公开参考约1.3–1.89万/㎡",
       "status": "在售",
-      "areaRange": "89–143㎡",
-      "tags": ["地铁", "学区", "示意"],
-      "meta": "东湖高新 · 建面 89–143㎡ · 近 11 号线",
-      "heroLabel": "New · 示例",
-      "orientation": "南北为主",
+      "areaRange": "89–178㎡",
+      "size": 89.0,
+      "tags": [
+        "地铁",
+        "学区",
+        "在售",
+        "~100㎡"
+      ],
+      "meta": "东湖高新 · 89–178㎡ · 11号线光谷生物园站约0.3–1.1km",
+      "heroLabel": "New · 光谷东",
+      "heroImage": "https://imgwcs2.soufunimg.com/house/2022_08/09/c49efc2d-b896-41dd-bcbb-4a418bb055af.jpg",
+      "imageAttribution": "房天下配图 · 项目宣传图，非承诺实景",
+      "orientation": "南北为主（示意）",
       "year": 2026,
-      "fitout": "毛坯 / 精装可选",
+      "fitout": "以售楼处公示为准",
       "layout": {
-        "title": "B 户型 · 建面约 118㎡",
-        "rooms": "三室两厅两卫",
-        "svg": "three-bed"
-      },
-      "daylight": [
-        {"label": "主卧", "score": 90},
-        {"label": "客厅", "score": 86},
-        {"label": "次卧", "score": 78},
-        {"label": "厨房", "score": 64}
-      ],
-      "amenities": [
-        {"name": "地铁 11 号线 · 示意站", "distance": "约 620 m"},
-        {"name": "光谷东小学（示意）", "distance": "约 1.0 km"},
-        {"name": "综合商场", "distance": "约 1.4 km"},
-        {"name": "三甲医院 · 示意", "distance": "约 3.6 km"},
-        {"name": "公园绿地", "distance": "约 800 m"}
-      ],
-      "specs": [
-        {"k": "建面", "v": "约 118 ㎡"},
-        {"k": "套内", "v": "约 97 ㎡"},
-        {"k": "朝向", "v": "南北通透"},
-        {"k": "楼层", "v": "中高 / 32"},
-        {"k": "交付年", "v": "2026（示意）"},
-        {"k": "装修", "v": "精装可选"}
-      ],
-      "filingUrl": "https://fgj.wuhan.gov.cn/",
-      "summary": "示意新盘，侧重地铁与学区标签；价格为示例挂牌起点。"
-    },
-    {
-      "id": "nh-yinghu",
-      "name": "映湖云著",
-      "nameNote": "示意楼盘",
-      "area": "光谷东",
-      "district": "光谷东",
-      "price": 2.45,
-      "priceUnit": "万/㎡ 起",
-      "status": "在售",
-      "areaRange": "98–128㎡",
-      "tags": ["公园", "地铁", "示意"],
-      "meta": "光谷东 · 建面 98–128㎡ · 临湖公园",
-      "heroLabel": "New · 示例",
-      "orientation": "南向为主",
-      "year": 2025,
-      "fitout": "精装交付（示意）",
-      "layout": {
-        "title": "C 户型 · 建面约 108㎡",
-        "rooms": "三室两厅一卫",
-        "svg": "three-bed-compact"
-      },
-      "daylight": [
-        {"label": "主卧", "score": 84},
-        {"label": "客厅", "score": 91},
-        {"label": "次卧", "score": 72},
-        {"label": "厨房", "score": 58}
-      ],
-      "amenities": [
-        {"name": "地铁 11 号线 · 示意站", "distance": "约 1.1 km"},
-        {"name": "湖滨公园（示意）", "distance": "约 350 m"},
-        {"name": "社区商业", "distance": "约 600 m"},
-        {"name": "综合商场", "distance": "约 2.0 km"},
-        {"name": "三甲医院 · 示意", "distance": "约 4.2 km"}
-      ],
-      "specs": [
-        {"k": "建面", "v": "约 108 ㎡"},
-        {"k": "套内", "v": "约 89 ㎡"},
-        {"k": "朝向", "v": "南向为主"},
-        {"k": "楼层", "v": "中 / 28"},
-        {"k": "交付年", "v": "2025（示意）"},
-        {"k": "装修", "v": "精装"}
-      ],
-      "filingUrl": "https://fgj.wuhan.gov.cn/",
-      "summary": "示意临湖改善盘；配套以公园距离见长。"
-    },
-    {
-      "id": "nh-qinglan",
-      "name": "青岚里",
-      "nameNote": "示意楼盘",
-      "area": "光谷东",
-      "district": "光谷东",
-      "price": 2.18,
-      "priceUnit": "万/㎡ 起",
-      "status": "在售",
-      "areaRange": "79–112㎡",
-      "tags": ["地铁", "示意"],
-      "meta": "光谷东 · 建面 79–112㎡ · 刚需向",
-      "heroLabel": "New · 示例",
-      "orientation": "南北 / 南向",
-      "year": 2026,
-      "fitout": "毛坯为主",
-      "layout": {
-        "title": "A 户型 · 建面约 89㎡",
+        "title": "主力户型 · 建面约 89㎡",
         "rooms": "两室两厅一卫",
-        "svg": "two-bed"
+        "svg": "two-bed",
+        "schematic": true
       },
       "daylight": [
-        {"label": "主卧", "score": 80},
-        {"label": "客厅", "score": 85},
-        {"label": "次卧", "score": 70},
-        {"label": "厨房", "score": 60}
+        {
+          "label": "主卧",
+          "score": 86
+        },
+        {
+          "label": "客厅",
+          "score": 88
+        },
+        {
+          "label": "次卧",
+          "score": 76
+        },
+        {
+          "label": "厨房",
+          "score": 60
+        }
       ],
       "amenities": [
-        {"name": "地铁 11 号线 · 示意站", "distance": "约 750 m"},
-        {"name": "光谷东小学（示意）", "distance": "约 1.6 km"},
-        {"name": "综合商场", "distance": "约 1.8 km"},
-        {"name": "社区商业", "distance": "约 400 m"},
-        {"name": "公园绿地", "distance": "约 1.2 km"}
+        {
+          "name": "11号线光谷生物园站",
+          "distance": "约 0.3–1.1km"
+        },
+        {
+          "name": "华师武汉新城实验小学（2026-2027划片）",
+          "distance": "划片/学区参考"
+        },
+        {
+          "name": "综合商场 · 光谷东",
+          "distance": "约 1–3 km"
+        },
+        {
+          "name": "公园绿地",
+          "distance": "板块内"
+        }
       ],
       "specs": [
-        {"k": "建面", "v": "约 89 ㎡"},
-        {"k": "套内", "v": "约 72 ㎡"},
-        {"k": "朝向", "v": "南北"},
-        {"k": "楼层", "v": "中低 / 26"},
-        {"k": "交付年", "v": "2026（示意）"},
-        {"k": "装修", "v": "毛坯"}
+        {
+          "k": "建面段",
+          "v": "89–178㎡"
+        },
+        {
+          "k": "参考单价",
+          "v": "1.50 万/㎡"
+        },
+        {
+          "k": "开发商",
+          "v": "湖北长江广电置业有限责任公司"
+        },
+        {
+          "k": "板块",
+          "v": "光谷东"
+        },
+        {
+          "k": "地铁",
+          "v": "11号线光谷生物园站约0.3–1"
+        },
+        {
+          "k": "学区",
+          "v": "华师武汉新城实验小学（2026-"
+        }
       ],
-      "filingUrl": "https://fgj.wuhan.gov.cn/",
-      "summary": "示意刚需向新盘；总价门槛相对更低。"
+      "lat": 30.48,
+      "lng": 114.52,
+      "filingUrl": "http://spfxm.whfgxx.org.cn:8083/spfxmcx/spfcx_index.aspx",
+      "filingQuery": "长江广电置业 / 光谷家",
+      "filingNameHints": [
+        "长江广电置业 / 光谷家",
+        "长江广电·光谷家"
+      ],
+      "filingPortalLabel": "住更局 · 商品房项目查询",
+      "presaleUrl": "http://spfxm.whfgxx.org.cn:8083/zzzz/zz_ysgsspfzb.aspx",
+      "sourceUrl": "https://wuhan.newhouse.fang.com/loupan/2610162136.htm",
+      "summary": "长江广电·光谷家 · 公开参考约1.3–1.89万/㎡。户型线稿为示意几何，非官方户型图。"
     },
     {
-      "id": "nh-xinghe",
-      "name": "星河序",
-      "nameNote": "示意楼盘",
+      "id": "nh-028c9f",
+      "name": "万和竞界",
+      "nameNote": "公开参考挂牌/在售标价 · 非网签",
+      "sample": false,
       "area": "光谷东",
       "district": "东湖高新",
-      "price": 2.62,
+      "price": 1.3,
       "priceUnit": "万/㎡ 起",
+      "priceNote": "二期公开约1.3万/㎡；一期更高",
       "status": "在售",
-      "areaRange": "105–145㎡",
-      "tags": ["学区", "公园", "示意"],
-      "meta": "东湖高新 · 建面 105–145㎡ · 学区向",
-      "heroLabel": "New · 示例",
-      "orientation": "南北通透",
-      "year": 2027,
-      "fitout": "精装交付（示意）",
+      "areaRange": "95–142㎡",
+      "size": 95.0,
+      "tags": [
+        "地铁",
+        "学区",
+        "在售",
+        "~100㎡"
+      ],
+      "meta": "东湖高新 · 95–142㎡ · 19号线新月溪站约0.6km",
+      "heroLabel": "New · 光谷东",
+      "heroImage": "https://imgwcs2.soufunimg.com/house/2023_08/02/33f2a6f4-6839-4e80-bfce-12c3d017c9a3.png",
+      "imageAttribution": "房天下配图 · 项目宣传图，非承诺实景",
+      "orientation": "南北为主（示意）",
+      "year": 2026,
+      "fitout": "以售楼处公示为准",
       "layout": {
-        "title": "D 户型 · 建面约 128㎡",
-        "rooms": "四室两厅两卫",
-        "svg": "four-bed"
+        "title": "主力户型 · 建面约 95㎡",
+        "rooms": "三室两厅一卫",
+        "svg": "three-bed-compact",
+        "schematic": true
       },
       "daylight": [
-        {"label": "主卧", "score": 93},
-        {"label": "客厅", "score": 88},
-        {"label": "次卧", "score": 81},
-        {"label": "厨房", "score": 67}
+        {
+          "label": "主卧",
+          "score": 86
+        },
+        {
+          "label": "客厅",
+          "score": 88
+        },
+        {
+          "label": "次卧",
+          "score": 76
+        },
+        {
+          "label": "厨房",
+          "score": 60
+        }
       ],
       "amenities": [
-        {"name": "地铁 11 号线 · 示意站", "distance": "约 1.3 km"},
-        {"name": "光谷东小学（示意）", "distance": "约 700 m"},
-        {"name": "综合商场", "distance": "约 1.1 km"},
-        {"name": "三甲医院 · 示意", "distance": "约 3.2 km"},
-        {"name": "公园绿地", "distance": "约 550 m"}
+        {
+          "name": "19号线新月溪站",
+          "distance": "约 0.6km"
+        },
+        {
+          "name": "光谷一小云溪小学",
+          "distance": "划片/学区参考"
+        },
+        {
+          "name": "综合商场 · 光谷东",
+          "distance": "约 1–3 km"
+        },
+        {
+          "name": "公园绿地",
+          "distance": "板块内"
+        }
       ],
       "specs": [
-        {"k": "建面", "v": "约 128 ㎡"},
-        {"k": "套内", "v": "约 105 ㎡"},
-        {"k": "朝向", "v": "南北通透"},
-        {"k": "楼层", "v": "高 / 33"},
-        {"k": "交付年", "v": "2027（示意）"},
-        {"k": "装修", "v": "精装"}
+        {
+          "k": "建面段",
+          "v": "95–142㎡"
+        },
+        {
+          "k": "参考单价",
+          "v": "1.30 万/㎡"
+        },
+        {
+          "k": "开发商",
+          "v": "武汉光谷新文化投资发展有限公司"
+        },
+        {
+          "k": "板块",
+          "v": "光谷东"
+        },
+        {
+          "k": "地铁",
+          "v": "19号线新月溪站约0.6km"
+        },
+        {
+          "k": "学区",
+          "v": "光谷一小云溪小学"
+        }
       ],
-      "filingUrl": "https://fgj.wuhan.gov.cn/",
-      "summary": "示意学区改善盘；户型偏大。"
+      "lat": 30.485,
+      "lng": 114.535,
+      "filingUrl": "http://spfxm.whfgxx.org.cn:8083/spfxmcx/spfcx_index.aspx",
+      "filingQuery": "光谷国际新文化电竞中心",
+      "filingNameHints": [
+        "光谷国际新文化电竞中心",
+        "万和竞界"
+      ],
+      "filingPortalLabel": "住更局 · 商品房项目查询",
+      "presaleUrl": "http://spfxm.whfgxx.org.cn:8083/zzzz/zz_ysgsspfzb.aspx",
+      "sourceUrl": "https://wuhan.newhouse.fang.com/loupan/2610167158.htm",
+      "summary": "万和竞界 · 二期公开约1.3万/㎡；一期更高。户型线稿为示意几何，非官方户型图。"
+    },
+    {
+      "id": "nh-242e7e",
+      "name": "招商天青府",
+      "nameNote": "公开参考挂牌/在售标价 · 非网签",
+      "sample": false,
+      "area": "光谷东",
+      "district": "东湖高新",
+      "price": 1.42,
+      "priceUnit": "万/㎡ 起",
+      "priceNote": "公开参考约1.4–1.45万/㎡",
+      "status": "在售",
+      "areaRange": "107/130/154㎡",
+      "size": 107.0,
+      "tags": [
+        "地铁",
+        "在售",
+        "~100㎡"
+      ],
+      "meta": "东湖高新 · 107/130/154㎡ · 19号线新月溪公园站约0.5km",
+      "heroLabel": "New · 光谷东",
+      "heroImage": "http://imgwcs2.soufunimg.com/house/2025_03/25/de9aafbb-c855-46dc-9580-ddeb733b98ed.jpg",
+      "imageAttribution": "房天下配图 · 项目宣传图，非承诺实景",
+      "orientation": "南北为主（示意）",
+      "year": 2026,
+      "fitout": "以售楼处公示为准",
+      "layout": {
+        "title": "主力户型 · 建面约 107㎡",
+        "rooms": "三室两厅一卫",
+        "svg": "three-bed-compact",
+        "schematic": true
+      },
+      "daylight": [
+        {
+          "label": "主卧",
+          "score": 86
+        },
+        {
+          "label": "客厅",
+          "score": 88
+        },
+        {
+          "label": "次卧",
+          "score": 76
+        },
+        {
+          "label": "厨房",
+          "score": 60
+        }
+      ],
+      "amenities": [
+        {
+          "name": "19号线新月溪公园站",
+          "distance": "约 0.5km"
+        },
+        {
+          "name": "综合商场 · 光谷东",
+          "distance": "约 1–3 km"
+        },
+        {
+          "name": "公园绿地",
+          "distance": "板块内"
+        }
+      ],
+      "specs": [
+        {
+          "k": "建面段",
+          "v": "107/130/154㎡"
+        },
+        {
+          "k": "参考单价",
+          "v": "1.42 万/㎡"
+        },
+        {
+          "k": "开发商",
+          "v": "武汉菁英房地产开发有限公司"
+        },
+        {
+          "k": "板块",
+          "v": "光谷东"
+        },
+        {
+          "k": "地铁",
+          "v": "19号线新月溪公园站约0.5km"
+        },
+        {
+          "k": "学区",
+          "v": "待核实"
+        }
+      ],
+      "lat": 30.482,
+      "lng": 114.538,
+      "filingUrl": "http://spfxm.whfgxx.org.cn:8083/spfxmcx/spfcx_index.aspx",
+      "filingQuery": "招商天青府 / 菁英房地产",
+      "filingNameHints": [
+        "招商天青府 / 菁英房地产",
+        "招商天青府"
+      ],
+      "filingPortalLabel": "住更局 · 商品房项目查询",
+      "presaleUrl": "http://spfxm.whfgxx.org.cn:8083/zzzz/zz_ysgsspfzb.aspx",
+      "sourceUrl": "https://wuhan.newhouse.fang.com/loupan/2610172456.htm",
+      "summary": "招商天青府 · 公开参考约1.4–1.45万/㎡。户型线稿为示意几何，非官方户型图。"
+    },
+    {
+      "id": "nh-cbceda",
+      "name": "伟鹏·硅谷小镇",
+      "nameNote": "公开参考挂牌/在售标价 · 非网签",
+      "sample": false,
+      "area": "光谷东",
+      "district": "东湖高新",
+      "price": 1.0,
+      "priceUnit": "万/㎡ 起",
+      "priceNote": "公开参考约1.0万/㎡",
+      "status": "在售",
+      "areaRange": "91–137㎡",
+      "size": 91.0,
+      "tags": [
+        "地铁",
+        "学区",
+        "在售",
+        "~100㎡"
+      ],
+      "meta": "东湖高新 · 91–137㎡ · 11号线未来三路站约1km",
+      "heroLabel": "New · 光谷东",
+      "heroImage": "https://imgwcs2.soufunimg.com/house/2021_03/11/c33df09c-b2d2-4d7e-95ef-945f9e098ace.jpg",
+      "imageAttribution": "房天下配图 · 项目宣传图，非承诺实景",
+      "orientation": "南北为主（示意）",
+      "year": 2026,
+      "fitout": "以售楼处公示为准",
+      "layout": {
+        "title": "主力户型 · 建面约 91㎡",
+        "rooms": "两室两厅一卫",
+        "svg": "two-bed",
+        "schematic": true
+      },
+      "daylight": [
+        {
+          "label": "主卧",
+          "score": 86
+        },
+        {
+          "label": "客厅",
+          "score": 88
+        },
+        {
+          "label": "次卧",
+          "score": 76
+        },
+        {
+          "label": "厨房",
+          "score": 60
+        }
+      ],
+      "amenities": [
+        {
+          "name": "11号线未来三路站",
+          "distance": "约 1km"
+        },
+        {
+          "name": "光谷育才小学",
+          "distance": "划片/学区参考"
+        },
+        {
+          "name": "综合商场 · 光谷东",
+          "distance": "约 1–3 km"
+        },
+        {
+          "name": "公园绿地",
+          "distance": "板块内"
+        }
+      ],
+      "specs": [
+        {
+          "k": "建面段",
+          "v": "91–137㎡"
+        },
+        {
+          "k": "参考单价",
+          "v": "1.00 万/㎡"
+        },
+        {
+          "k": "开发商",
+          "v": "硅谷智恒（武汉）科技产业发展有限公司"
+        },
+        {
+          "k": "板块",
+          "v": "光谷东"
+        },
+        {
+          "k": "地铁",
+          "v": "11号线未来三路站约1km"
+        },
+        {
+          "k": "学区",
+          "v": "光谷育才小学"
+        }
+      ],
+      "lat": 30.47,
+      "lng": 114.55,
+      "filingUrl": "http://spfxm.whfgxx.org.cn:8083/spfxmcx/spfcx_index.aspx",
+      "filingQuery": "伟鹏硅谷小镇",
+      "filingNameHints": [
+        "伟鹏硅谷小镇",
+        "伟鹏·硅谷小镇"
+      ],
+      "filingPortalLabel": "住更局 · 商品房项目查询",
+      "presaleUrl": "http://spfxm.whfgxx.org.cn:8083/zzzz/zz_ysgsspfzb.aspx",
+      "sourceUrl": "https://wuhan.newhouse.fang.com/loupan/2610157694.htm",
+      "summary": "伟鹏·硅谷小镇 · 公开参考约1.0万/㎡。户型线稿为示意几何，非官方户型图。"
+    },
+    {
+      "id": "nh-048305",
+      "name": "光谷鼎正悦府",
+      "nameNote": "公开参考挂牌/在售标价 · 非网签",
+      "sample": false,
+      "area": "光谷东",
+      "district": "东湖高新",
+      "price": 1.5,
+      "priceUnit": "万/㎡ 起",
+      "priceNote": "门户标价差异大约1.25–2.15万",
+      "status": "在售",
+      "areaRange": "108–125㎡",
+      "size": 108.0,
+      "tags": [
+        "学区",
+        "在售",
+        "~100㎡"
+      ],
+      "meta": "东湖高新 · 108–125㎡ · 配套见详情",
+      "heroLabel": "New · 光谷东",
+      "heroImage": "https://imgwcs2.soufunimg.com/house/2021_06/21/e7cd63cc-28fc-45ba-a60b-05e8d4270257.jpg",
+      "imageAttribution": "房天下配图 · 项目宣传图，非承诺实景",
+      "orientation": "南北为主（示意）",
+      "year": 2026,
+      "fitout": "以售楼处公示为准",
+      "layout": {
+        "title": "主力户型 · 建面约 108㎡",
+        "rooms": "三室两厅一卫",
+        "svg": "three-bed-compact",
+        "schematic": true
+      },
+      "daylight": [
+        {
+          "label": "主卧",
+          "score": 86
+        },
+        {
+          "label": "客厅",
+          "score": 88
+        },
+        {
+          "label": "次卧",
+          "score": 76
+        },
+        {
+          "label": "厨房",
+          "score": 60
+        }
+      ],
+      "amenities": [
+        {
+          "name": "地铁（待核实）",
+          "distance": "—"
+        },
+        {
+          "name": "光谷第十八小学",
+          "distance": "划片/学区参考"
+        },
+        {
+          "name": "综合商场 · 光谷东",
+          "distance": "约 1–3 km"
+        },
+        {
+          "name": "公园绿地",
+          "distance": "板块内"
+        }
+      ],
+      "specs": [
+        {
+          "k": "建面段",
+          "v": "108–125㎡"
+        },
+        {
+          "k": "参考单价",
+          "v": "1.50 万/㎡"
+        },
+        {
+          "k": "开发商",
+          "v": "湖北鼎正景明置业"
+        },
+        {
+          "k": "板块",
+          "v": "光谷东"
+        },
+        {
+          "k": "地铁",
+          "v": "待核实"
+        },
+        {
+          "k": "学区",
+          "v": "光谷第十八小学"
+        }
+      ],
+      "lat": 30.488,
+      "lng": 114.525,
+      "filingUrl": "http://spfxm.whfgxx.org.cn:8083/spfxmcx/spfcx_index.aspx",
+      "filingQuery": "鼎正悦府",
+      "filingNameHints": [
+        "鼎正悦府",
+        "光谷鼎正悦府"
+      ],
+      "filingPortalLabel": "住更局 · 商品房项目查询",
+      "presaleUrl": "http://spfxm.whfgxx.org.cn:8083/zzzz/zz_ysgsspfzb.aspx",
+      "sourceUrl": "https://wuhan.newhouse.fang.com/loupan/2610159126.htm",
+      "summary": "光谷鼎正悦府 · 门户标价差异大约1.25–2.15万。户型线稿为示意几何，非官方户型图。"
+    },
+    {
+      "id": "nh-378df6",
+      "name": "城投南山长投·领峯",
+      "nameNote": "公开参考挂牌/在售标价 · 非网签",
+      "sample": false,
+      "area": "光谷东",
+      "district": "东湖高新",
+      "price": 1.3,
+      "priceUnit": "万/㎡ 起",
+      "priceNote": "公开参考约1.2–1.4万/㎡",
+      "status": "在售",
+      "areaRange": "107–143㎡",
+      "size": 107.0,
+      "tags": [
+        "地铁",
+        "学区",
+        "在售",
+        "~100㎡"
+      ],
+      "meta": "东湖高新 · 107–143㎡ · 11号线约1.2km",
+      "heroLabel": "New · 光谷东",
+      "heroImage": "https://imgwcs2.soufunimg.com/house/2022_04/08/9479a2ec-48e5-49c6-b71a-184a4af2c59c.jpg",
+      "imageAttribution": "房天下配图 · 项目宣传图，非承诺实景",
+      "orientation": "南北为主（示意）",
+      "year": 2026,
+      "fitout": "以售楼处公示为准",
+      "layout": {
+        "title": "主力户型 · 建面约 107㎡",
+        "rooms": "三室两厅一卫",
+        "svg": "three-bed-compact",
+        "schematic": true
+      },
+      "daylight": [
+        {
+          "label": "主卧",
+          "score": 86
+        },
+        {
+          "label": "客厅",
+          "score": 88
+        },
+        {
+          "label": "次卧",
+          "score": 76
+        },
+        {
+          "label": "厨房",
+          "score": 60
+        }
+      ],
+      "amenities": [
+        {
+          "name": "11号线",
+          "distance": "约 1.2km"
+        },
+        {
+          "name": "华师武汉新城实验小学",
+          "distance": "划片/学区参考"
+        },
+        {
+          "name": "综合商场 · 光谷东",
+          "distance": "约 1–3 km"
+        },
+        {
+          "name": "公园绿地",
+          "distance": "板块内"
+        }
+      ],
+      "specs": [
+        {
+          "k": "建面段",
+          "v": "107–143㎡"
+        },
+        {
+          "k": "参考单价",
+          "v": "1.30 万/㎡"
+        },
+        {
+          "k": "开发商",
+          "v": "武汉合跃建设发展有限公司"
+        },
+        {
+          "k": "板块",
+          "v": "光谷东"
+        },
+        {
+          "k": "地铁",
+          "v": "11号线约1.2km"
+        },
+        {
+          "k": "学区",
+          "v": "华师武汉新城实验小学"
+        }
+      ],
+      "lat": 30.486,
+      "lng": 114.528,
+      "filingUrl": "http://spfxm.whfgxx.org.cn:8083/spfxmcx/spfcx_index.aspx",
+      "filingQuery": "领峯 / 合跃建设",
+      "filingNameHints": [
+        "领峯 / 合跃建设",
+        "城投南山长投·领峯"
+      ],
+      "filingPortalLabel": "住更局 · 商品房项目查询",
+      "presaleUrl": "http://spfxm.whfgxx.org.cn:8083/zzzz/zz_ysgsspfzb.aspx",
+      "sourceUrl": "https://wuhan.newhouse.fang.com/loupan/2610159236.htm",
+      "summary": "城投南山长投·领峯 · 公开参考约1.2–1.4万/㎡。户型线稿为示意几何，非官方户型图。"
     }
   ]
 }

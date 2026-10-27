@@ -1,196 +1,646 @@
 {
-  "sample": true,
+  "sample": false,
   "area": "光谷东",
-  "focusNote": "精选约 100㎡ 主力面积段（示例）",
-  "filters": ["全部", "~100㎡", "地铁", "满五", "次新"],
+  "focusNote": "精选约 100㎡ 主力面积段 · 公开挂牌参考",
+  "priceBasis": "公开参考挂牌，非网签成交价",
+  "filters": [
+    "全部",
+    "~100㎡",
+    "地铁",
+    "学区",
+    "满五",
+    "次新",
+    "≤1.3万",
+    "1.3–1.45万",
+    "≥1.45万"
+  ],
   "items": [
     {
-      "id": "sh-yunqi-118",
-      "name": "云栖南岸",
-      "unitLabel": "三室 · C 户型",
-      "nameNote": "示意小区",
+      "id": "sh-553e27",
+      "name": "中建星光城一期",
+      "unitLabel": "约 96㎡",
+      "nameNote": "公开参考挂牌 · 非网签",
+      "sample": false,
       "area": "光谷东",
-      "priceTotal": 268,
+      "priceTotal": 128,
       "priceUnit": "万",
-      "pricePerSqm": 2.27,
-      "size": 118,
-      "year": 2018,
-      "tags": ["满五", "地铁", "次新", "示意"],
-      "meta": "2018 年 · 118㎡ · 南北通透 · 示例",
-      "heroLabel": "Resale · 示例",
-      "orientation": "南北通透",
-      "floor": "中高 / 33",
-      "fitout": "中古风精装（示意）",
+      "pricePerSqm": 1.33,
+      "priceNote": "公开参考挂牌均价推算总价，非成交价",
+      "size": 96.0,
+      "year": 2021,
+      "yearLabel": "2021–2022",
+      "tags": [
+        "地铁",
+        "学区",
+        "~100㎡",
+        "满五",
+        "次新"
+      ],
+      "meta": "2021–2022 · 96㎡ · 11号线光谷生物园约0.9km",
+      "heroLabel": "Resale · 光谷东",
+      "heroImage": null,
+      "imageAttribution": "几何占位 · 非实景",
+      "orientation": "南北通透（示意）",
+      "floor": "以挂牌为准",
+      "fitout": "以挂牌为准",
       "taxStatus": "满五",
       "layout": {
-        "title": "C 户型 · 建面约 118㎡",
-        "rooms": "三室两厅两卫",
-        "svg": "three-bed"
+        "title": "主力户型 · 建面约 96㎡",
+        "rooms": "三室两厅一卫",
+        "svg": "three-bed-compact",
+        "schematic": true
       },
       "daylight": [
-        {"label": "主卧", "score": 88},
-        {"label": "客厅", "score": 92},
-        {"label": "次卧", "score": 74},
-        {"label": "厨房", "score": 61}
+        {
+          "label": "主卧",
+          "score": 86
+        },
+        {
+          "label": "客厅",
+          "score": 88
+        },
+        {
+          "label": "次卧",
+          "score": 76
+        },
+        {
+          "label": "厨房",
+          "score": 60
+        }
       ],
       "amenities": [
-        {"name": "地铁 11 号线 · 示意站", "distance": "约 680 m"},
-        {"name": "光谷东小学（示意）", "distance": "约 1.2 km"},
-        {"name": "综合商场", "distance": "约 1.5 km"},
-        {"name": "三甲医院 · 示意", "distance": "约 3.8 km"},
-        {"name": "公园绿地", "distance": "约 900 m"}
+        {
+          "name": "11号线光谷生物园",
+          "distance": "约 0.9km"
+        },
+        {
+          "name": "光谷二小玉林小学",
+          "distance": "划片/学区参考"
+        },
+        {
+          "name": "综合商场 · 光谷东",
+          "distance": "约 1–3 km"
+        },
+        {
+          "name": "公园绿地",
+          "distance": "板块内"
+        }
       ],
       "specs": [
-        {"k": "建面", "v": "约 118 ㎡"},
-        {"k": "套内", "v": "约 96 ㎡"},
-        {"k": "朝向", "v": "南北通透"},
-        {"k": "楼层", "v": "中高 / 33"},
-        {"k": "年代", "v": "2018"},
-        {"k": "装修", "v": "中古风精装"}
+        {
+          "k": "建面",
+          "v": "约 96 ㎡"
+        },
+        {
+          "k": "参考单价",
+          "v": "1.33 万/㎡"
+        },
+        {
+          "k": "参考总价",
+          "v": "约 128 万"
+        },
+        {
+          "k": "年代",
+          "v": "2021–2022"
+        },
+        {
+          "k": "地铁",
+          "v": "11号线光谷生物园约0.9km"
+        },
+        {
+          "k": "学区",
+          "v": "光谷二小玉林小学"
+        }
       ],
-      "filingUrl": "https://fgj.wuhan.gov.cn/",
-      "summary": "示意次新三室，约 100㎡+ 主力段；装修倾向中古风示例。"
+      "lat": 30.481,
+      "lng": 114.515,
+      "communitySourceUrl": "https://mobile.anjuke.com/esf/wh-cm1240744/",
+      "communitySourceLabel": "小区来源页",
+      "sourceUrl": "https://mobile.anjuke.com/esf/wh-cm1240744/",
+      "filingUrl": "https://mobile.anjuke.com/esf/wh-cm1240744/",
+      "summary": "中建星光城一期 · 公开参考挂牌约 1.33 万/㎡。户型线稿为示意几何。"
     },
     {
-      "id": "sh-muye-96",
-      "name": "木野庭",
-      "unitLabel": "两室 · A 户型",
-      "nameNote": "示意小区",
+      "id": "sh-94a1b7",
+      "name": "中建星光城二期",
+      "unitLabel": "约 98㎡",
+      "nameNote": "公开参考挂牌 · 非网签",
+      "sample": false,
       "area": "光谷东",
-      "priceTotal": 208,
+      "priceTotal": 122,
       "priceUnit": "万",
-      "pricePerSqm": 2.17,
-      "size": 96,
-      "year": 2017,
-      "tags": ["满二", "地铁", "~100㎡", "示意"],
-      "meta": "2017 年 · 96㎡ · 近地铁 · 示例",
-      "heroLabel": "Resale · 示例",
-      "orientation": "南向为主",
-      "floor": "中 / 28",
-      "fitout": "简装偏中古（示意）",
+      "pricePerSqm": 1.24,
+      "priceNote": "公开参考挂牌均价推算总价，非成交价",
+      "size": 98.0,
+      "year": 2022,
+      "yearLabel": "约2022",
+      "tags": [
+        "地铁",
+        "学区",
+        "~100㎡",
+        "满二",
+        "次新"
+      ],
+      "meta": "约2022 · 98㎡ · 11号线光谷生物园约0.9km",
+      "heroLabel": "Resale · 光谷东",
+      "heroImage": null,
+      "imageAttribution": "几何占位 · 非实景",
+      "orientation": "南北通透（示意）",
+      "floor": "以挂牌为准",
+      "fitout": "以挂牌为准",
       "taxStatus": "满二",
       "layout": {
-        "title": "A 户型 · 建面约 96㎡",
-        "rooms": "两室两厅一卫",
-        "svg": "two-bed"
+        "title": "主力户型 · 建面约 98㎡",
+        "rooms": "三室两厅一卫",
+        "svg": "three-bed-compact",
+        "schematic": true
       },
       "daylight": [
-        {"label": "主卧", "score": 82},
-        {"label": "客厅", "score": 87},
-        {"label": "次卧", "score": 69},
-        {"label": "厨房", "score": 55}
+        {
+          "label": "主卧",
+          "score": 86
+        },
+        {
+          "label": "客厅",
+          "score": 88
+        },
+        {
+          "label": "次卧",
+          "score": 76
+        },
+        {
+          "label": "厨房",
+          "score": 60
+        }
       ],
       "amenities": [
-        {"name": "地铁 11 号线 · 示意站", "distance": "约 520 m"},
-        {"name": "光谷东小学（示意）", "distance": "约 1.5 km"},
-        {"name": "综合商场", "distance": "约 1.7 km"},
-        {"name": "社区商业", "distance": "约 450 m"},
-        {"name": "公园绿地", "distance": "约 1.1 km"}
+        {
+          "name": "11号线光谷生物园",
+          "distance": "约 0.9km"
+        },
+        {
+          "name": "光谷二小玉林小学",
+          "distance": "划片/学区参考"
+        },
+        {
+          "name": "综合商场 · 光谷东",
+          "distance": "约 1–3 km"
+        },
+        {
+          "name": "公园绿地",
+          "distance": "板块内"
+        }
       ],
       "specs": [
-        {"k": "建面", "v": "约 96 ㎡"},
-        {"k": "套内", "v": "约 78 ㎡"},
-        {"k": "朝向", "v": "南向为主"},
-        {"k": "楼层", "v": "中 / 28"},
-        {"k": "年代", "v": "2017"},
-        {"k": "装修", "v": "简装偏中古"}
+        {
+          "k": "建面",
+          "v": "约 98 ㎡"
+        },
+        {
+          "k": "参考单价",
+          "v": "1.24 万/㎡"
+        },
+        {
+          "k": "参考总价",
+          "v": "约 122 万"
+        },
+        {
+          "k": "年代",
+          "v": "约2022"
+        },
+        {
+          "k": "地铁",
+          "v": "11号线光谷生物园约0.9km"
+        },
+        {
+          "k": "学区",
+          "v": "光谷二小玉林小学"
+        }
       ],
-      "filingUrl": "https://fgj.wuhan.gov.cn/",
-      "summary": "示意近地铁两室，面积贴近 100㎡ 主力刚需段。"
+      "lat": 30.48,
+      "lng": 114.516,
+      "communitySourceUrl": "https://mobile.anjuke.com/esf/wh-cm1673645/",
+      "communitySourceLabel": "小区来源页",
+      "sourceUrl": "https://mobile.anjuke.com/esf/wh-cm1673645/",
+      "filingUrl": "https://mobile.anjuke.com/esf/wh-cm1673645/",
+      "summary": "中建星光城二期 · 公开参考挂牌约 1.24 万/㎡。户型线稿为示意几何。"
     },
     {
-      "id": "sh-hansha-105",
-      "name": "寒沙里",
-      "unitLabel": "三室 · B 户型",
-      "nameNote": "示意小区",
+      "id": "sh-b7dccc",
+      "name": "中粮光谷祥云",
+      "unitLabel": "约 103㎡",
+      "nameNote": "公开参考挂牌 · 非网签",
+      "sample": false,
       "area": "光谷东",
-      "priceTotal": 235,
+      "priceTotal": 149,
       "priceUnit": "万",
-      "pricePerSqm": 2.24,
-      "size": 105,
+      "pricePerSqm": 1.45,
+      "priceNote": "公开参考挂牌均价推算总价，非成交价",
+      "size": 103.0,
+      "year": 2021,
+      "yearLabel": "约2021–2022",
+      "tags": [
+        "地铁",
+        "学区",
+        "~100㎡",
+        "满五",
+        "次新"
+      ],
+      "meta": "约2021–2022 · 103㎡ · 11号线光谷生物园约0.35km",
+      "heroLabel": "Resale · 光谷东",
+      "heroImage": null,
+      "imageAttribution": "几何占位 · 非实景",
+      "orientation": "南北通透（示意）",
+      "floor": "以挂牌为准",
+      "fitout": "以挂牌为准",
+      "taxStatus": "满五",
+      "layout": {
+        "title": "主力户型 · 建面约 103㎡",
+        "rooms": "三室两厅一卫",
+        "svg": "three-bed-compact",
+        "schematic": true
+      },
+      "daylight": [
+        {
+          "label": "主卧",
+          "score": 86
+        },
+        {
+          "label": "客厅",
+          "score": 88
+        },
+        {
+          "label": "次卧",
+          "score": 76
+        },
+        {
+          "label": "厨房",
+          "score": 60
+        }
+      ],
+      "amenities": [
+        {
+          "name": "11号线光谷生物园",
+          "distance": "约 0.35km"
+        },
+        {
+          "name": "华师武汉新城实验小学",
+          "distance": "划片/学区参考"
+        },
+        {
+          "name": "综合商场 · 光谷东",
+          "distance": "约 1–3 km"
+        },
+        {
+          "name": "公园绿地",
+          "distance": "板块内"
+        }
+      ],
+      "specs": [
+        {
+          "k": "建面",
+          "v": "约 103 ㎡"
+        },
+        {
+          "k": "参考单价",
+          "v": "1.45 万/㎡"
+        },
+        {
+          "k": "参考总价",
+          "v": "约 149 万"
+        },
+        {
+          "k": "年代",
+          "v": "约2021–2022"
+        },
+        {
+          "k": "地铁",
+          "v": "11号线光谷生物园约0.35km"
+        },
+        {
+          "k": "学区",
+          "v": "华师武汉新城实验小学"
+        }
+      ],
+      "lat": 30.479,
+      "lng": 114.512,
+      "communitySourceUrl": "https://wuhan.esf.fang.com/loupan/2610155776.htm",
+      "communitySourceLabel": "小区来源页",
+      "sourceUrl": "https://wuhan.esf.fang.com/loupan/2610155776.htm",
+      "filingUrl": "https://wuhan.esf.fang.com/loupan/2610155776.htm",
+      "summary": "中粮光谷祥云 · 公开参考挂牌约 1.45 万/㎡。户型线稿为示意几何。"
+    },
+    {
+      "id": "sh-254afe",
+      "name": "绿地光谷中心城",
+      "unitLabel": "约 101㎡",
+      "nameNote": "公开参考挂牌 · 非网签",
+      "sample": false,
+      "area": "光谷东",
+      "priceTotal": 136,
+      "priceUnit": "万",
+      "pricePerSqm": 1.35,
+      "priceNote": "公开参考挂牌均价推算总价，非成交价",
+      "size": 101.0,
       "year": 2019,
-      "tags": ["满五", "~100㎡", "次新", "示意"],
-      "meta": "2019 年 · 105㎡ · 南北 · 示例",
-      "heroLabel": "Resale · 示例",
-      "orientation": "南北",
-      "floor": "高 / 30",
-      "fitout": "中古风软装倾向（示意）",
+      "yearLabel": "约2019–2020",
+      "tags": [
+        "地铁",
+        "学区",
+        "~100㎡",
+        "满五"
+      ],
+      "meta": "约2019–2020 · 101㎡ · 光谷五路站约0.66km",
+      "heroLabel": "Resale · 光谷东",
+      "heroImage": null,
+      "imageAttribution": "几何占位 · 非实景",
+      "orientation": "南北通透（示意）",
+      "floor": "以挂牌为准",
+      "fitout": "以挂牌为准",
       "taxStatus": "满五",
       "layout": {
-        "title": "B 户型 · 建面约 105㎡",
+        "title": "主力户型 · 建面约 101㎡",
         "rooms": "三室两厅一卫",
-        "svg": "three-bed-compact"
+        "svg": "three-bed-compact",
+        "schematic": true
       },
       "daylight": [
-        {"label": "主卧", "score": 86},
-        {"label": "客厅", "score": 90},
-        {"label": "次卧", "score": 76},
-        {"label": "厨房", "score": 63}
+        {
+          "label": "主卧",
+          "score": 86
+        },
+        {
+          "label": "客厅",
+          "score": 88
+        },
+        {
+          "label": "次卧",
+          "score": 76
+        },
+        {
+          "label": "厨房",
+          "score": 60
+        }
       ],
       "amenities": [
-        {"name": "地铁 11 号线 · 示意站", "distance": "约 900 m"},
-        {"name": "光谷东小学（示意）", "distance": "约 1.0 km"},
-        {"name": "综合商场", "distance": "约 1.3 km"},
-        {"name": "三甲医院 · 示意", "distance": "约 4.0 km"},
-        {"name": "公园绿地", "distance": "约 700 m"}
+        {
+          "name": "光谷五路站",
+          "distance": "约 0.66km"
+        },
+        {
+          "name": "华师武汉新城实验小学",
+          "distance": "划片/学区参考"
+        },
+        {
+          "name": "综合商场 · 光谷东",
+          "distance": "约 1–3 km"
+        },
+        {
+          "name": "公园绿地",
+          "distance": "板块内"
+        }
       ],
       "specs": [
-        {"k": "建面", "v": "约 105 ㎡"},
-        {"k": "套内", "v": "约 86 ㎡"},
-        {"k": "朝向", "v": "南北"},
-        {"k": "楼层", "v": "高 / 30"},
-        {"k": "年代", "v": "2019"},
-        {"k": "装修", "v": "中古风倾向"}
+        {
+          "k": "建面",
+          "v": "约 101 ㎡"
+        },
+        {
+          "k": "参考单价",
+          "v": "1.35 万/㎡"
+        },
+        {
+          "k": "参考总价",
+          "v": "约 136 万"
+        },
+        {
+          "k": "年代",
+          "v": "约2019–2020"
+        },
+        {
+          "k": "地铁",
+          "v": "光谷五路站约0.66km"
+        },
+        {
+          "k": "学区",
+          "v": "华师武汉新城实验小学"
+        }
       ],
-      "filingUrl": "https://fgj.wuhan.gov.cn/",
-      "summary": "示意满五三室，约 105㎡，兼顾学区与公园。"
+      "lat": 30.49,
+      "lng": 114.54,
+      "communitySourceUrl": "https://mobile.anjuke.com/esf/wh-cm1236559/",
+      "communitySourceLabel": "小区来源页",
+      "sourceUrl": "https://mobile.anjuke.com/esf/wh-cm1236559/",
+      "filingUrl": "https://mobile.anjuke.com/esf/wh-cm1236559/",
+      "summary": "绿地光谷中心城 · 公开参考挂牌约 1.35 万/㎡。户型线稿为示意几何。"
     },
     {
-      "id": "sh-linbo-102",
-      "name": "临波苑",
-      "unitLabel": "三室 · 改两厅",
-      "nameNote": "示意小区",
+      "id": "sh-fe3fd1",
+      "name": "联投驿园",
+      "unitLabel": "约 101㎡",
+      "nameNote": "公开参考挂牌 · 非网签",
+      "sample": false,
       "area": "光谷东",
-      "priceTotal": 222,
+      "priceTotal": 146,
       "priceUnit": "万",
-      "pricePerSqm": 2.18,
-      "size": 102,
-      "year": 2015,
-      "tags": ["满五", "~100㎡", "地铁", "示意"],
-      "meta": "2015 年 · 102㎡ · 近地铁 · 示例",
-      "heroLabel": "Resale · 示例",
-      "orientation": "南北通透",
-      "floor": "中低 / 26",
-      "fitout": "中古改造示例",
+      "pricePerSqm": 1.45,
+      "priceNote": "公开参考挂牌均价推算总价，非成交价",
+      "size": 101.0,
+      "year": 2018,
+      "yearLabel": "约2018–2019",
+      "tags": [
+        "地铁",
+        "学区",
+        "~100㎡",
+        "满五"
+      ],
+      "meta": "约2018–2019 · 101㎡ · 11号线光谷六路站",
+      "heroLabel": "Resale · 光谷东",
+      "heroImage": null,
+      "imageAttribution": "几何占位 · 非实景",
+      "orientation": "南北通透（示意）",
+      "floor": "以挂牌为准",
+      "fitout": "以挂牌为准",
       "taxStatus": "满五",
       "layout": {
-        "title": "改户型 · 建面约 102㎡",
+        "title": "主力户型 · 建面约 101㎡",
         "rooms": "三室两厅一卫",
-        "svg": "three-bed-compact"
+        "svg": "three-bed-compact",
+        "schematic": true
       },
       "daylight": [
-        {"label": "主卧", "score": 79},
-        {"label": "客厅", "score": 84},
-        {"label": "次卧", "score": 71},
-        {"label": "厨房", "score": 57}
+        {
+          "label": "主卧",
+          "score": 86
+        },
+        {
+          "label": "客厅",
+          "score": 88
+        },
+        {
+          "label": "次卧",
+          "score": 76
+        },
+        {
+          "label": "厨房",
+          "score": 60
+        }
       ],
       "amenities": [
-        {"name": "地铁 11 号线 · 示意站", "distance": "约 580 m"},
-        {"name": "光谷东小学（示意）", "distance": "约 1.8 km"},
-        {"name": "综合商场", "distance": "约 2.1 km"},
-        {"name": "社区商业", "distance": "约 300 m"},
-        {"name": "公园绿地", "distance": "约 1.4 km"}
+        {
+          "name": "11号线光谷六路站",
+          "distance": "站距待核实"
+        },
+        {
+          "name": "光谷第十七小学",
+          "distance": "划片/学区参考"
+        },
+        {
+          "name": "综合商场 · 光谷东",
+          "distance": "约 1–3 km"
+        },
+        {
+          "name": "公园绿地",
+          "distance": "板块内"
+        }
       ],
       "specs": [
-        {"k": "建面", "v": "约 102 ㎡"},
-        {"k": "套内", "v": "约 84 ㎡"},
-        {"k": "朝向", "v": "南北通透"},
-        {"k": "楼层", "v": "中低 / 26"},
-        {"k": "年代", "v": "2015"},
-        {"k": "装修", "v": "中古改造"}
+        {
+          "k": "建面",
+          "v": "约 101 ㎡"
+        },
+        {
+          "k": "参考单价",
+          "v": "1.45 万/㎡"
+        },
+        {
+          "k": "参考总价",
+          "v": "约 146 万"
+        },
+        {
+          "k": "年代",
+          "v": "约2018–2019"
+        },
+        {
+          "k": "地铁",
+          "v": "11号线光谷六路站"
+        },
+        {
+          "k": "学区",
+          "v": "光谷第十七小学"
+        }
       ],
-      "filingUrl": "https://fgj.wuhan.gov.cn/",
-      "summary": "示意地铁盘三室，年代略早，总价友好。"
+      "lat": 30.492,
+      "lng": 114.545,
+      "communitySourceUrl": "https://mobile.anjuke.com/esf/wh-cm1001788/",
+      "communitySourceLabel": "小区来源页",
+      "sourceUrl": "https://mobile.anjuke.com/esf/wh-cm1001788/",
+      "filingUrl": "https://mobile.anjuke.com/esf/wh-cm1001788/",
+      "summary": "联投驿园 · 公开参考挂牌约 1.45 万/㎡。户型线稿为示意几何。"
+    },
+    {
+      "id": "sh-486b13",
+      "name": "新城璞樾门第",
+      "unitLabel": "约 108㎡",
+      "nameNote": "公开参考挂牌 · 非网签",
+      "sample": false,
+      "area": "光谷东",
+      "priceTotal": 151,
+      "priceUnit": "万",
+      "pricePerSqm": 1.4,
+      "priceNote": "公开参考挂牌均价推算总价，非成交价",
+      "size": 108.0,
+      "year": 2021,
+      "yearLabel": "约2021",
+      "tags": [
+        "学区",
+        "~100㎡",
+        "满五",
+        "次新"
+      ],
+      "meta": "约2021 · 108㎡ · 近11号线",
+      "heroLabel": "Resale · 光谷东",
+      "heroImage": null,
+      "imageAttribution": "几何占位 · 非实景",
+      "orientation": "南北通透（示意）",
+      "floor": "以挂牌为准",
+      "fitout": "以挂牌为准",
+      "taxStatus": "满五",
+      "layout": {
+        "title": "主力户型 · 建面约 108㎡",
+        "rooms": "三室两厅一卫",
+        "svg": "three-bed-compact",
+        "schematic": true
+      },
+      "daylight": [
+        {
+          "label": "主卧",
+          "score": 86
+        },
+        {
+          "label": "客厅",
+          "score": 88
+        },
+        {
+          "label": "次卧",
+          "score": 76
+        },
+        {
+          "label": "厨房",
+          "score": 60
+        }
+      ],
+      "amenities": [
+        {
+          "name": "近11号线",
+          "distance": "站距待核实"
+        },
+        {
+          "name": "光谷第十八小学",
+          "distance": "划片/学区参考"
+        },
+        {
+          "name": "综合商场 · 光谷东",
+          "distance": "约 1–3 km"
+        },
+        {
+          "name": "公园绿地",
+          "distance": "板块内"
+        }
+      ],
+      "specs": [
+        {
+          "k": "建面",
+          "v": "约 108 ㎡"
+        },
+        {
+          "k": "参考单价",
+          "v": "1.40 万/㎡"
+        },
+        {
+          "k": "参考总价",
+          "v": "约 151 万"
+        },
+        {
+          "k": "年代",
+          "v": "约2021"
+        },
+        {
+          "k": "地铁",
+          "v": "近11号线"
+        },
+        {
+          "k": "学区",
+          "v": "光谷第十八小学"
+        }
+      ],
+      "lat": 30.487,
+      "lng": 114.53,
+      "communitySourceUrl": "https://wuhan.esf.fang.com/loupan/2610155904.htm",
+      "communitySourceLabel": "小区来源页",
+      "sourceUrl": "https://wuhan.esf.fang.com/loupan/2610155904.htm",
+      "filingUrl": "https://wuhan.esf.fang.com/loupan/2610155904.htm",
+      "summary": "新城璞樾门第 · 公开参考挂牌约 1.40 万/㎡。户型线稿为示意几何。"
     }
   ]
 }

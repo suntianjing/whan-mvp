@@ -1,0 +1,112 @@
+{
+  "series": "新建商品房成交统计情况（商品住房）",
+  "sourceOrg": "武汉市住房和城市更新局",
+  "listUrl": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/",
+  "fetchedAt": "2026-10-27T16:57:32+08:00",
+  "months": [
+    {
+      "period": "2026-02",
+      "year": 2026,
+      "month": 2,
+      "title": "2026年2月新建商品房成交统计情况",
+      "url": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/202603/t20260306_2736450.shtml",
+      "publishDate": "2026-03-06 15:48",
+      "cityHousingUnits": 2360,
+      "cityHousingAreaSqm": 278852.29,
+      "donghuHousingUnits": 323,
+      "donghuHousingAreaSqm": 41806.44,
+      "sourceOrg": "武汉市住房和城市更新局"
+    },
+    {
+      "period": "2026-03",
+      "year": 2026,
+      "month": 3,
+      "title": "2026年3月新建商品房成交统计情况",
+      "url": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/202604/t20260403_2749369.shtml",
+      "publishDate": "2026-04-03 16:43",
+      "cityHousingUnits": 12190,
+      "cityHousingAreaSqm": 1488059.34,
+      "donghuHousingUnits": 4046,
+      "donghuHousingAreaSqm": 465088.21,
+      "sourceOrg": "武汉市住房和城市更新局"
+    },
+    {
+      "period": "2026-04",
+      "year": 2026,
+      "month": 4,
+      "title": "2026年4月新建商品房成交统计情况",
+      "url": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/202605/t20260508_2761711.shtml",
+      "publishDate": "2026-05-08 10:33",
+      "cityHousingUnits": 5538,
+      "cityHousingAreaSqm": 657131.92,
+      "donghuHousingUnits": 781,
+      "donghuHousingAreaSqm": 95969.84,
+      "sourceOrg": "武汉市住房和城市更新局"
+    },
+    {
+      "period": "2026-05",
+      "year": 2026,
+      "month": 5,
+      "title": "2026年5月新建商品房成交统计情况",
+      "url": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/202606/t20260603_2772504.shtml",
+      "publishDate": "2026-06-03 09:17",
+      "cityHousingUnits": 9243,
+      "cityHousingAreaSqm": 1117752.71,
+      "donghuHousingUnits": 1724,
+      "donghuHousingAreaSqm": 211804.79,
+      "sourceOrg": "武汉市住房和城市更新局"
+    },
+    {
+      "period": "2026-06",
+      "year": 2026,
+      "month": 6,
+      "title": "2026年6月新建商品房成交统计情况",
+      "url": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/202607/t20260703_2816711.shtml",
+      "publishDate": "2026-07-03 17:02",
+      "cityHousingUnits": 12909,
+      "cityHousingAreaSqm": 1426969.13,
+      "donghuHousingUnits": 1951,
+      "donghuHousingAreaSqm": 229127.92,
+      "sourceOrg": "武汉市住房和城市更新局"
+    },
+    {
+      "period": "2026-07",
+      "year": 2026,
+      "month": 7,
+      "title": "2026年7月新建商品房成交统计情况",
+      "url": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/202608/t20260804_2829221.shtml",
+      "publishDate": "2026-08-04 09:20",
+      "cityHousingUnits": 7725,
+      "cityHousingAreaSqm": 917325.73,
+      "donghuHousingUnits": 1330,
+      "donghuHousingAreaSqm": 158236.39,
+      "sourceOrg": "武汉市住房和城市更新局"
+    },
+    {
+      "period": "2026-08",
+      "year": 2026,
+      "month": 8,
+      "title": "2026年8月新建商品房成交统计情况",
+      "url": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/202609/t20260903_2842556.shtml",
+      "publishDate": "2026-09-03 09:50",
+      "cityHousingUnits": 7900,
+      "cityHousingAreaSqm": 928377.29,
+      "donghuHousingUnits": 1865,
+      "donghuHousingAreaSqm": 224599.97,
+      "sourceOrg": "武汉市住房和城市更新局"
+    },
+    {
+      "period": "2026-09",
+      "year": 2026,
+      "month": 9,
+      "title": "2026年9月新建商品房成交统计情况",
+      "url": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/202610/t20261010_2858776.shtml",
+      "publishDate": "2026-10-10 15:15",
+      "cityHousingUnits": 6589,
+      "cityHousingAreaSqm": 776793.54,
+      "donghuHousingUnits": 1353,
+      "donghuHousingAreaSqm": 162300.35,
+      "sourceOrg": "武汉市住房和城市更新局"
+    }
+  ]
+}

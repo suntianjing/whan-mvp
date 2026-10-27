@@ -2,7 +2,10 @@
 """Fetch Wuhan ZGJ public housing monthly (and attempt daily) stats.
 
 Respectful: one GET per needed page. User-Agent identifies WHAN personal project.
-Writes data/official/latest_monthly.json; optionally latest_daily.json.
+Writes:
+  data/official/latest_monthly.json
+  data/official/history_monthly.json  (last N months)
+  data/official/latest_daily.json     (ASPX attempt; may be unavailable)
 Exits non-zero if monthly parse fails (does not touch market.json).
 """
 from __future__ import annotations
@@ -26,7 +29,10 @@ except ImportError:
 ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "data" / "official"
 LIST_URL = "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/"
-DAILY_URL = "https://zgj.wuhan.gov.cn/fzlm/mrxjspflby/index.shtml"
+DAILY_NAV_URL = "https://zgj.wuhan.gov.cn/fzlm/mrxjspflby/index.shtml"
+DAILY_ASPX_LIST = "http://119.97.201.20/spfcjtj/Sectionlist.aspx"
+DAILY_ASPX_BASE = "http://119.97.201.20/spfcjtj/"
+HISTORY_MONTHS = 8
 UA = "WHAN-personal-project-bot/1.0 (+https://suntianjing.github.io/whan-mvp/; personal static site)"
 TZ_SH = timezone(timedelta(hours=8))
 
@@ -136,7 +142,6 @@ def parse_detail(html: str, meta: dict[str, str]) -> dict[str, Any]:
         if cells:
             rows.append(cells)
 
-    # Expected data rows: region + 商品住房套数/面积 as first two numeric cols after name
     def extract_row(label: str) -> dict[str, Any] | None:
         for row in rows:
             if not row:
@@ -194,55 +199,153 @@ def mom_pct(curr: float | int, prev: float | int | None) -> float | None:
 
 
 def try_daily() -> dict[str, Any]:
-    """Attempt daily list; document when empty / JS / external-only."""
+    """Attempt zgj daily nav + known ASPX list under spfcjtj/."""
     fetched_at = now_shanghai().isoformat(timespec="seconds")
+    base: dict[str, Any] = {
+        "ok": False,
+        "available": False,
+        "flag": "daily_unavailable_use_monthly",
+        "messageZh": "日表暂不可用，已用月报",
+        "zgjDailyNav": DAILY_NAV_URL,
+        "fetchedAt": fetched_at,
+    }
+
+    # 1) zgj nav shell
     try:
-        html = fetch(DAILY_URL)
+        nav_html = fetch(DAILY_NAV_URL)
+        soup = BeautifulSoup(nav_html, "html.parser")
+        external: list[str] = []
+        for a in soup.find_all("a", href=True):
+            t = a.get_text(strip=True)
+            h = a["href"]
+            if "每日" in t or "spfcjtj" in h or "Sectionlist" in h:
+                external.append(abs_url(h, DAILY_NAV_URL))
+        base["zgjNavExternal"] = external[:5]
     except (urllib.error.URLError, TimeoutError, OSError) as e:
-        return {
-            "ok": False,
-            "url": DAILY_URL,
-            "fetchedAt": fetched_at,
-            "reason": f"fetch failed: {e}",
-            "note": "每日页不可用；行情依赖月报 + 本流水线更新时间戳。",
-        }
+        base["zgjNavError"] = str(e)
 
-    soup = BeautifulSoup(html, "html.parser")
-    tables = soup.find_all("table")
-    numeric_rows = 0
-    for table in tables:
-        for tr in table.find_all("tr"):
-            cells = [_cell_text(c) for c in tr.find_all(["td", "th"])]
-            if any(_parse_number(c) is not None for c in cells):
-                numeric_rows += 1
+    # 2) ASPX Sectionlist
+    try:
+        print(f"GET daily aspx {DAILY_ASPX_LIST}")
+        aspx_html = fetch(DAILY_ASPX_LIST)
+    except (urllib.error.URLError, TimeoutError, OSError) as e:
+        base.update(
+            {
+                "url": DAILY_ASPX_LIST,
+                "reason": f"ASPX list fetch failed: {e}",
+                "note": "无法访问日表 ASPX；行情依赖月报。",
+            }
+        )
+        return base
 
-    external: list[str] = []
+    soup = BeautifulSoup(aspx_html, "html.parser")
+    entries: list[dict[str, str]] = []
+    seen: set[str] = set()
     for a in soup.find_all("a", href=True):
-        t = a.get_text(strip=True)
+        t = re.sub(r"\s+", " ", a.get_text(" ", strip=True))
         h = a["href"]
-        if "每日" in t or "spfcjtj" in h or "Sectionlist" in h:
-            external.append(abs_url(h, DAILY_URL))
+        if "Content2.aspx" not in h:
+            continue
+        m = re.search(r"(20\d{2})年(\d{1,2})月(\d{1,2})日", t)
+        if not m:
+            continue
+        date = f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}"
+        if date in seen:
+            continue
+        seen.add(date)
+        entries.append(
+            {
+                "title": t,
+                "url": abs_url(h, DAILY_ASPX_BASE),
+                "date": date,
+            }
+        )
 
-    if numeric_rows == 0:
-        return {
-            "ok": False,
-            "url": DAILY_URL,
-            "fetchedAt": fetched_at,
-            "reason": "page has no parseable stats table (JS shell / nav only)",
-            "externalCandidates": external[:5],
+    latest_detail = None
+    if entries:
+        detail_url = entries[0]["url"]
+        try:
+            print(f"GET daily detail {detail_url}")
+            dhtml = fetch(detail_url)
+            dsoup = BeautifulSoup(dhtml, "html.parser")
+            nums = 0
+            for tr in dsoup.find_all("tr"):
+                for c in tr.find_all(["td", "th"]):
+                    if _parse_number(_cell_text(c)) is not None:
+                        nums += 1
+            latest_detail = {
+                "url": detail_url,
+                "title": entries[0]["title"],
+                "date": entries[0]["date"],
+                "hasImageStats": "image.aspx" in dhtml,
+                "hasHtmlTable": bool(dsoup.find("table")),
+                "numericTableCells": nums,
+            }
+            if nums >= 4 and latest_detail["hasHtmlTable"]:
+                # Unexpected: real HTML table — mark available for future parser
+                base.update(
+                    {
+                        "ok": True,
+                        "available": True,
+                        "flag": "daily_html_table_present",
+                        "messageZh": "日表 HTML 表可用（需扩展解析器）",
+                        "url": DAILY_ASPX_LIST,
+                        "aspxListOk": True,
+                        "recentDays": entries[:10],
+                        "latestDetail": latest_detail,
+                        "note": "检测到 HTML 数字表，可扩展解析；当前仍以月报驱动行情。",
+                    }
+                )
+                return base
+        except (urllib.error.URLError, TimeoutError, OSError) as e:
+            latest_detail = {"url": detail_url, "error": str(e)}
+
+    base.update(
+        {
+            "url": DAILY_ASPX_LIST,
+            "reason": (
+                "daily detail publishes stats as image.aspx (no HTML table to parse); "
+                "monthly report remains source of truth"
+            ),
+            "aspxListOk": True,
+            "recentDays": entries[:10],
+            "latestDetail": latest_detail,
             "note": (
-                "zgj 每日列表页本身无成交数字表，侧栏指向外部 ASPX "
-                "(如 http://119.97.201.20/spfcjtj/Sectionlist.aspx)。"
-                "本流水线不继续锤击外部主机；行情指标以月报为准。"
+                "ASPX 列表可访问，详情成交数字以图片发布，本流水线不做 OCR；"
+                "行情以月报为准。"
             ),
         }
+    )
+    return base
 
+
+def build_history(items: list[dict[str, str]], n: int = HISTORY_MONTHS) -> dict[str, Any]:
+    take = items[:n]
+    months: list[dict[str, Any]] = []
+    for meta in reversed(take):
+        print(f"GET history {meta['year']}-{meta['month']} {meta['url']}")
+        detail = parse_detail(fetch(meta["url"]), meta)
+        months.append(
+            {
+                "period": detail["period"],
+                "year": detail["year"],
+                "month": detail["month"],
+                "title": detail["title"],
+                "url": detail["url"],
+                "publishDate": detail["publishDate"],
+                "cityHousingUnits": detail["city"]["housingUnits"],
+                "cityHousingAreaSqm": detail["city"]["housingAreaSqm"],
+                "donghuHousingUnits": detail["donghuGaoxin"]["housingUnits"],
+                "donghuHousingAreaSqm": detail["donghuGaoxin"]["housingAreaSqm"],
+                "sourceOrg": detail["sourceOrg"],
+            }
+        )
     return {
-        "ok": True,
-        "url": DAILY_URL,
-        "fetchedAt": fetched_at,
-        "numericRows": numeric_rows,
-        "note": "unexpected: daily table present — extend parser if needed",
+        "series": "新建商品房成交统计情况（商品住房）",
+        "sourceOrg": "武汉市住房和城市更新局",
+        "listUrl": LIST_URL,
+        "fetchedAt": now_shanghai().isoformat(timespec="seconds"),
+        "months": months,
     }
 
 
@@ -348,7 +451,17 @@ def main() -> int:
         f"area={current['donghuGaoxin']['housingAreaSqm']}"
     )
 
-    print(f"GET daily {DAILY_URL}")
+    # History (reuses newest/prior pages already fetched when possible)
+    try:
+        history = build_history(items, HISTORY_MONTHS)
+        out_hist = OUT_DIR / "history_monthly.json"
+        out_hist.write_text(
+            json.dumps(history, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+        print(f"wrote {out_hist.relative_to(ROOT)} months={len(history['months'])}")
+    except Exception as e:
+        print(f"WARN: history_monthly failed: {e}", file=sys.stderr)
+
     daily = try_daily()
     out_daily = OUT_DIR / "latest_daily.json"
     out_daily.write_text(
