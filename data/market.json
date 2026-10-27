@@ -133,5 +133,22 @@
       "source": "武汉购房网",
       "url": "http://m.goufang.com/wh/bankuaijiage/2/7"
     }
+  },
+  "daily": {
+    "available": true,
+    "flag": "daily_ok",
+    "messageZh": "日表已接入（网签备案）",
+    "date": "2026-10-26",
+    "title": "2026年10月26日新建商品房网签备案统计情况",
+    "statWindow": "2026-10-25 17:00:00 至 2026-10-26 17:00:00",
+    "cityHousingUnits": 415,
+    "cityHousingAreaSqm": 48638.46,
+    "donghuHousingUnits": 19,
+    "donghuHousingAreaSqm": 2477.08,
+    "detailUrl": "http://119.97.201.20/spfcjtj/Content2.aspx?ID=15EDF8F96CBD46B2ABE5AD3D1B825C95",
+    "imageUrl": "http://119.97.201.20/spfcjtj/image.aspx?ID=15EDF8F96CBD46B2ABE5AD3D1B825C95",
+    "url": "http://119.97.201.20/spfcjtj/Sectionlist.aspx?pagenum=1",
+    "fetchedAt": "2026-10-27T17:15:02+08:00",
+    "extractMethod": "human_verified"
   }
 }
