@@ -284,11 +284,35 @@
     );
   }
 
+  function heroImageUrl(item) {
+    var u = item && item.heroImage != null ? String(item.heroImage).trim() : "";
+    return u || "";
+  }
+
+  /** Geometric CSS fallback when no local hero; never leave an empty frame. */
+  function renderHero(item, className, tagText) {
+    var url = heroImageUrl(item);
+    var tag = '<span class="listing-tag">' + esc(tagText || item.heroLabel || "") + "</span>";
+    if (url) {
+      return (
+        '<div class="' +
+        className +
+        ' has-hero" style="background-image:linear-gradient(180deg,rgba(0,0,0,0.15),rgba(0,0,0,0.55)),url(\'' +
+        esc(url).replace(/'/g, "%27") +
+        '\');background-size:cover;background-position:center;">' +
+        tag +
+        "</div>"
+      );
+    }
+    return '<div class="' + className + ' hero-fallback">' + tag + "</div>";
+  }
+
   function heroStyle(item) {
-    if (item.heroImage) {
+    var url = heroImageUrl(item);
+    if (url) {
       return (
         ' style="background-image:linear-gradient(180deg,rgba(0,0,0,0.15),rgba(0,0,0,0.55)),url(\'' +
-        esc(item.heroImage).replace(/'/g, "%27") +
+        esc(url).replace(/'/g, "%27") +
         '\');background-size:cover;background-position:center;"'
       );
     }
@@ -331,11 +355,7 @@
       '<a class="listing" href="detail.html?type=new&id=' +
       encodeURIComponent(item.id) +
       '">' +
-      '<div class="listing-img"' +
-      heroStyle(item) +
-      '><span class="listing-tag">' +
-      esc(item.heroLabel || "New") +
-      "</span></div>" +
+      renderHero(item, "listing-img", item.heroLabel || "New") +
       '<div class="listing-body">' +
       '<div class="listing-title">' +
       esc(item.name) +
@@ -369,11 +389,7 @@
       '<a class="listing" href="detail.html?type=sh&id=' +
       encodeURIComponent(item.id) +
       '">' +
-      '<div class="listing-img"' +
-      heroStyle(item) +
-      '><span class="listing-tag">' +
-      esc(item.heroLabel || "Resale") +
-      "</span></div>" +
+      renderHero(item, "listing-img", item.heroLabel || "Resale") +
       '<div class="listing-body">' +
       '<div class="listing-title">' +
       esc(item.name) +
@@ -702,20 +718,43 @@
     if (item.lat == null || item.lng == null) return "";
     var lat = item.lat;
     var lng = item.lng;
-    var delta = 0.02;
-    var bbox = (lng - delta) + "%2C" + (lat - delta) + "%2C" + (lng + delta) + "%2C" + (lat + delta);
-    var marker = lat + "%2C" + lng;
-    var embed =
-      "https://www.openstreetmap.org/export/embed.html?bbox=" +
-      bbox +
-      "&layer=mapnik&marker=" +
-      marker;
     var link = "https://www.openstreetmap.org/?mlat=" + lat + "&mlon=" + lng + "#map=15/" + lat + "/" + lng;
+    var staticSrc =
+      "https://staticmap.openstreetmap.de/staticmap.php?center=" +
+      lat +
+      "," +
+      lng +
+      "&zoom=14&size=780x360&markers=" +
+      lat +
+      "," +
+      lng +
+      ",lightblue1";
+    var placeholder =
+      '<div class="map-placeholder" role="img" aria-label="地图占位">' +
+      '<div class="map-placeholder-title">地图暂不可用</div>' +
+      '<div class="map-placeholder-coords">' +
+      lat +
+      ", " +
+      lng +
+      "</div></div>";
     return (
       '<div class="floor-card map-card"><div class="kicker">Map · 位置（近似）</div>' +
-      '<iframe class="map-iframe" title="OpenStreetMap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="' +
-      embed +
-      '"></iframe>' +
+      '<div class="map-frame">' +
+      '<img class="map-static" alt="静态地图 ' +
+      lat +
+      ", " +
+      lng +
+      '" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="' +
+      staticSrc +
+      '" onerror="this.style.display=\'none\';var p=this.nextElementSibling;if(p)p.hidden=false;" />' +
+      '<div class="map-placeholder" hidden>' +
+      '<div class="map-placeholder-title">地图暂不可用</div>' +
+      '<div class="map-placeholder-coords">' +
+      lat +
+      ", " +
+      lng +
+      "</div></div>" +
+      "</div>" +
       '<a class="daily-link" href="' +
       link +
       '" target="_blank" rel="noopener noreferrer">在 OSM 打开 · ' +
@@ -810,11 +849,7 @@
       '<a class="detail-back" href="' + backHref + '">← 返回 · ' + esc(data.market.brandZh || "武楼") + "</a>" +
       starBtn(type, id, false) +
       "</div>" +
-      '<div class="detail-hero"' +
-      heroStyle(item) +
-      '><span class="listing-tag">' +
-      esc(item.heroLabel || "光谷东") +
-      "</span></div>" +
+      renderHero(item, "detail-hero", item.heroLabel || "光谷东") +
       (item.imageAttribution
         ? '<p class="img-attr">' + esc(item.imageAttribution) + "</p>"
         : "") +
@@ -999,7 +1034,7 @@
       cell("采光均分", days) +
       cell("配套", amens) +
       "</div>" +
-      '<p class="caption">价格为公开挂牌参考 · 户型/采光为示意</p></div>';
+      '<p class="caption">精选盘名为光谷东真实项目 · 价格为公开挂牌/在售参考非网签 · 户型图为几何示意</p></div>';
     qsa(".cmp-rm", root).forEach(function (btn) {
       btn.addEventListener("click", function () {
         removeCompare(btn.getAttribute("data-type"), btn.getAttribute("data-id"));
@@ -1091,6 +1126,7 @@
       "<h2>更新节奏</h2><p>" +
       esc(m.cadence || "") +
       "</p>" +
+      "<h2>精选盘说明</h2><p>精选盘名为光谷东真实项目；价格为公开挂牌/在售参考非网签；户型图为几何示意。</p>" +
       "<h2>品牌</h2><p>WHAN / 武楼 — 原创品牌示意，不借用第三方航天或汽车品牌名称与标识。</p>" +
       "<footer>WHAN · 武楼<br>武汉楼市分析 MVP</footer></div>";
   }
