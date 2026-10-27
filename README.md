@@ -2,7 +2,7 @@
 
 光谷东聚焦的**纯静态**移动端行情站（无后端、无构建）。品牌：**武楼 / WHAN**。
 
-> 全部楼盘名、价格与指标均为**示例数据**，仅供产品演示，不构成交易或投资建议。
+> 行情指标来自武汉市住更局公开月报；**楼盘名与卡片报价仍为示意**，仅供产品演示，不构成交易或投资建议。
 
 ## 如何打开
 
@@ -43,8 +43,11 @@ whan-mvp/
 │   ├── newhomes.json       # 新房列表 + 详情字段
 │   └── secondhand.json     # 二手列表 + 详情字段
 ├── scripts/
-│   ├── generate-embed.py   # JSON → data-embed.js
-│   └── update-note.md      # 未来每日更新作业说明
+│   ├── fetch_zgj_stats.py          # 住更局月报抓取
+│   ├── apply_official_to_market.py # 合并进 market.json
+│   ├── generate-embed.py           # JSON → data-embed.js
+│   └── update-note.md              # 每日更新作业说明
+├── data/official/          # latest_monthly.json 等快照
 └── README.md
 ```
 
@@ -60,12 +63,18 @@ whan-mvp/
 
 不使用 SpaceX / Tesla 等第三方品牌名称或标识。
 
-## 日常更新（数据替换）
+## 日常更新（住更局月报流水线）
 
-1. 改写 `data/market.json`（参考价、指标、判断文案、`updatedAt`）
-2. 按需更新 `data/newhomes.json`、`data/secondhand.json`
-3. 运行 `python3 scripts/generate-embed.py`
-4. 重新发布静态目录
+```bash
+python3 scripts/fetch_zgj_stats.py          # 拉列表+最新/上月月报 → data/official/
+python3 scripts/apply_official_to_market.py # 合并进 data/market.json
+python3 scripts/generate-embed.py           # 同步 js/data-embed.js
+git add -A && git commit -m "chore: refresh official housing stats" && git push origin main
+```
+
+- 月报列表：https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/
+- 每日列表页目前无可用数字表，指标以月报为准（见 `data/official/latest_daily.json` 说明）
+- 楼盘库 `newhomes.json` / `secondhand.json` 可按周轮换精选 id
 
 详见 `scripts/update-note.md`。
 

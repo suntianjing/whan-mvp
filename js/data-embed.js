@@ -5,43 +5,46 @@ window.WHAN_EMBED = {
     "brandZh": "武楼",
     "focusArea": "光谷东",
     "city": "武汉",
-    "sample": true,
-    "updatedAt": "2026-10-27T10:00:00+08:00",
-    "updatedLabel": "2026-10-27 10:00（示例）",
+    "sample": false,
+    "updatedAt": "2026-10-27T16:42:28+08:00",
+    "updatedLabel": "2026-10-27 16:42（住更局月报）",
     "referencePrice": {
-      "value": 2.46,
-      "unit": "万/㎡",
-      "label": "挂牌参考均价",
-      "note": "示例"
+      "value": 1353,
+      "unit": "套",
+      "label": "东湖高新商品住房成交",
+      "note": "2026年9月 · 住更局月报"
     },
-    "judgment": "挂牌量缓增、议价空间打开；地铁沿线次新抗跌相对更好。观望可优先看户型采光与通勤半径，不宜追高远郊纯新盘溢价。（示例判断）",
+    "judgment": "据武汉市住更局《2026年9月新建商品房成交统计情况》，全市商品住房成交6589套（环比−16.6%），东湖高新区1353套（环比−27.4%，光谷东公开行政区代理指标）。东湖高新环比降幅大于全市，板块成交降温相对更明显。行情指标来自住更局公开月报；楼盘卡片仍为示意，不构成交易或投资建议。",
     "metrics": [
       {
-        "id": "ask",
-        "label": "挂牌均价",
-        "value": "2.46",
-        "delta": "万/㎡ · 周环比 −0.8%",
-        "trend": "down"
+        "id": "city_units",
+        "label": "全市商品住房成交",
+        "value": "6589",
+        "delta": "套 · 2026年9月 · 环比 −16.6%",
+        "trend": "down",
+        "official": true
       },
       {
-        "id": "deal",
-        "label": "成交参考",
-        "value": "2.19",
-        "delta": "万/㎡ · 周环比 +0.3%",
-        "trend": "up"
+        "id": "donghu_units",
+        "label": "东湖高新商品住房成交",
+        "value": "1353",
+        "delta": "套 · 2026年9月 · 环比 −27.4%",
+        "trend": "down",
+        "official": true
       },
       {
-        "id": "supply",
-        "label": "新增挂牌",
-        "value": "186",
-        "delta": "套 · 较上周 +12%",
-        "trend": "down"
+        "id": "city_area",
+        "label": "全市成交面积",
+        "value": "77.68",
+        "delta": "万㎡ · 2026年9月 · 环比 −16.3%",
+        "trend": "down",
+        "official": true
       }
     ],
     "cityPulse": {
       "title": "光谷东市场脉搏",
       "en": "City Pulse · Wuhan",
-      "status": "本周更新 · 示例数据"
+      "status": "2026年9月月报已接入 · 无每日表"
     },
     "curatedNewIds": [
       "nh-yunjing",
@@ -53,12 +56,32 @@ window.WHAN_EMBED = {
       "sh-muye-96"
     ],
     "sources": [
-      "武汉市住房保障和房屋管理局公开统计（示意引用）",
-      "光谷东板块挂牌与成交样本整理（示例）",
-      "地铁与配套距离为步行/直线示意，非测绘成果"
+      "武汉市住房和城市更新局《2026年9月新建商品房成交统计情况》 https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/202610/t20261010_2858776.shtml",
+      "东湖高新区商品住房成交作为光谷东聚焦的公开行政区代理指标",
+      "楼盘精选卡片仍为示意样本，非备案核验结果；地铁/配套距离为步行示意"
     ],
-    "cadence": "计划每日更新 data/market.json 中的参考价与指标；新房/二手精选按周轮换。",
-    "disclaimer": "本站全部数字与楼盘名为示例数据，仅供产品演示，不构成交易或投资建议。备案信息请以武汉住更局公开渠道为准。"
+    "cadence": "每日可运行 scripts/fetch_zgj_stats.py → apply_official_to_market.py → generate-embed.py；有新月报时刷新行情指标。每日成交列表页目前为 JS/外链，暂以月报 + 更新时间戳为准。",
+    "disclaimer": "行情指标（全市/东湖高新商品住房成交套数与面积及环比）来自武汉市住房和城市更新局公开月报，由本站脚本抓取汇总；楼盘卡片名称与报价仍为示意，仅供产品演示，不构成交易或投资建议。备案信息请以住更局公开渠道为准。 每日成交页暂不可解析，指标以月报为准。",
+    "official": {
+      "period": "2026-09",
+      "periodLabel": "2026年9月",
+      "publishDate": "2026-10-10 15:15",
+      "url": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/202610/t20261010_2858776.shtml",
+      "fetchedAt": "2026-10-27T16:42:16+08:00",
+      "cityHousingUnits": 6589,
+      "cityHousingAreaSqm": 776793.54,
+      "donghuHousingUnits": 1353,
+      "donghuHousingAreaSqm": 162300.35,
+      "mom": {
+        "priorPeriod": "2026-08",
+        "priorUrl": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/202609/t20260903_2842556.shtml",
+        "cityHousingUnitsPct": -16.59,
+        "cityHousingAreaPct": -16.33,
+        "donghuHousingUnitsPct": -27.45,
+        "donghuHousingAreaPct": -27.74
+      },
+      "sourceOrg": "武汉市住房和城市更新局"
+    }
   },
   "newhomes": {
     "sample": true,

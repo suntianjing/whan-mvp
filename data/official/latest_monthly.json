@@ -1,0 +1,44 @@
+{
+  "period": "2026-09",
+  "year": 2026,
+  "month": 9,
+  "title": "2026年9月新建商品房成交统计情况",
+  "url": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/202610/t20261010_2858776.shtml",
+  "publishDate": "2026-10-10 15:15",
+  "city": {
+    "housingUnits": 6589,
+    "housingAreaSqm": 776793.54
+  },
+  "donghuGaoxin": {
+    "housingUnits": 1353,
+    "housingAreaSqm": 162300.35,
+    "note": "东湖高新区作为光谷东聚焦的公开行政区代理指标"
+  },
+  "sourceOrg": "武汉市住房和城市更新局",
+  "series": "新建商品房成交统计情况（商品住房）",
+  "fetchedAt": "2026-10-27T16:42:16+08:00",
+  "listUrl": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/",
+  "newerThanStored": true,
+  "previousStoredUrl": null,
+  "mom": {
+    "priorPeriod": "2026-08",
+    "priorUrl": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/202609/t20260903_2842556.shtml",
+    "cityHousingUnitsPct": -16.59,
+    "cityHousingAreaPct": -16.33,
+    "donghuHousingUnitsPct": -27.45,
+    "donghuHousingAreaPct": -27.74
+  },
+  "prior": {
+    "period": "2026-08",
+    "url": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/202609/t20260903_2842556.shtml",
+    "publishDate": "2026-09-03 09:50",
+    "city": {
+      "housingUnits": 7900,
+      "housingAreaSqm": 928377.29
+    },
+    "donghuGaoxin": {
+      "housingUnits": 1865,
+      "housingAreaSqm": 224599.97
+    }
+  }
+}

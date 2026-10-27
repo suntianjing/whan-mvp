@@ -304,7 +304,8 @@
       "</small></div>" +
       '<div class="pill">' +
       (m.focusArea || "光谷东") +
-      " · 示例</div></div>" +
+      (m.sample === false ? " · 官方月报" : " · 示例") +
+      "</div></div>" +
       '<div class="pulse">' +
       '<div class="pulse-loc">' +
       (m.cityPulse && m.cityPulse.en ? m.cityPulse.en : "City Pulse") +
@@ -318,7 +319,8 @@
       '<div class="ref-price">' +
       '<div class="k">' +
       (m.referencePrice && m.referencePrice.label ? m.referencePrice.label : "参考价") +
-      " · 示例</div>" +
+      (m.sample === false ? "" : " · 示例") +
+      "</div>" +
       '<div><span class="v">' +
       (m.referencePrice ? m.referencePrice.value : "—") +
       '</span><span class="u">' +
@@ -559,10 +561,14 @@
       "<small>" +
       (m.brand || "WHAN") +
       "</small></div>" +
-      '<span class="sample-badge">Sample</span></div>' +
+      '<span class="sample-badge">' +
+      (m.sample === false ? "Official + Sample cards" : "Sample") +
+      "</span></div>" +
       '<div class="page-head"><h1>说明</h1>' +
       '<p class="sub">数据口径、更新节奏与免责声明</p></div>' +
-      "<h2>示例数据说明</h2>" +
+      "<h2>" +
+      (m.sample === false ? "数据说明" : "示例数据说明") +
+      "</h2>" +
       "<p>" +
       (m.disclaimer || "") +
       "</p>" +
@@ -576,7 +582,9 @@
       '<div class="meta-row"><span class="k">加载方式</span><span>' +
       (data.source === "fetch" ? "data/*.json（fetch）" : "js/data-embed.js（内嵌）") +
       "</span></div></div>" +
-      "<h2>数据来源（示意）</h2><ul>" +
+      "<h2>" +
+      (m.sample === false ? "数据来源" : "数据来源（示意）") +
+      "</h2><ul>" +
       sources +
       "</ul>" +
       "<h2>更新节奏</h2><p>" +

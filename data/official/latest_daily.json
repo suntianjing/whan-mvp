@@ -1,0 +1,10 @@
+{
+  "ok": false,
+  "url": "https://zgj.wuhan.gov.cn/fzlm/mrxjspflby/index.shtml",
+  "fetchedAt": "2026-10-27T16:42:24+08:00",
+  "reason": "page has no parseable stats table (JS shell / nav only)",
+  "externalCandidates": [
+    "http://119.97.201.20/spfcjtj/Sectionlist.aspx#test#test"
+  ],
+  "note": "zgj 每日列表页本身无成交数字表，侧栏指向外部 ASPX (如 http://119.97.201.20/spfcjtj/Sectionlist.aspx)。本流水线不继续锤击外部主机；行情指标以月报为准。"
+}
