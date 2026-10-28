@@ -4,8 +4,8 @@
   "focusArea": "光谷东",
   "city": "武汉",
   "sample": false,
-  "updatedAt": "2026-10-27T17:15:15+08:00",
-  "updatedLabel": "2026-10-27 17:15（住更局月报+日表）",
+  "updatedAt": "2026-10-28T08:06:59+08:00",
+  "updatedLabel": "2026-10-28 08:06（住更局月报+日表）",
   "referencePrice": {
     "value": 1353,
     "unit": "套",
@@ -42,7 +42,7 @@
   "cityPulse": {
     "title": "光谷东市场脉搏",
     "en": "City Pulse · Wuhan",
-    "status": "2026年9月月报已接入 · 10-26 日表"
+    "status": "2026年9月月报已接入 · 10-27 日表"
   },
   "curatedNewIds": [
     "nh-23d29e",
@@ -65,7 +65,7 @@
     "periodLabel": "2026年9月",
     "publishDate": "2026-10-10 15:15",
     "url": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/202610/t20261010_2858776.shtml",
-    "fetchedAt": "2026-10-27T16:42:16+08:00",
+    "fetchedAt": "2026-10-28T08:05:17+08:00",
     "cityHousingUnits": 6589,
     "cityHousingAreaSqm": 776793.54,
     "donghuHousingUnits": 1353,
@@ -84,18 +84,18 @@
     "available": true,
     "flag": "daily_ok",
     "messageZh": "日表已接入（网签备案）",
-    "date": "2026-10-26",
-    "title": "2026年10月26日新建商品房网签备案统计情况",
-    "statWindow": "2026-10-25 17:00:00 至 2026-10-26 17:00:00",
-    "cityHousingUnits": 415,
-    "cityHousingAreaSqm": 48638.46,
-    "donghuHousingUnits": 19,
-    "donghuHousingAreaSqm": 2477.08,
-    "detailUrl": "http://119.97.201.20/spfcjtj/Content2.aspx?ID=15EDF8F96CBD46B2ABE5AD3D1B825C95",
-    "imageUrl": "http://119.97.201.20/spfcjtj/image.aspx?ID=15EDF8F96CBD46B2ABE5AD3D1B825C95",
+    "date": "2026-10-27",
+    "title": "2026年10月27日新建商品房网签备案统计情况",
+    "statWindow": "2026-10-26 17:00:00 至 2026-10-27 17:00:00",
+    "cityHousingUnits": 398,
+    "cityHousingAreaSqm": 48164.05,
+    "donghuHousingUnits": 36,
+    "donghuHousingAreaSqm": 4225.15,
+    "detailUrl": "http://119.97.201.20/spfcjtj/Content2.aspx?ID=8BC589049CA64EF3ABBFEE24C7E88AA2",
+    "imageUrl": "http://119.97.201.20/spfcjtj/image.aspx?ID=8BC589049CA64EF3ABBFEE24C7E88AA2",
     "url": "http://119.97.201.20/spfcjtj/Sectionlist.aspx?pagenum=1",
-    "fetchedAt": "2026-10-27T17:00:04+08:00",
-    "extractMethod": "human_verified"
+    "fetchedAt": "2026-10-28T08:06:59+08:00",
+    "extractMethod": "image_read_verified"
   },
   "fieldLegend": {
     "official": [

@@ -16,10 +16,10 @@
   },
   "sourceOrg": "武汉市住房和城市更新局",
   "series": "新建商品房成交统计情况（商品住房）",
-  "fetchedAt": "2026-10-27T16:42:16+08:00",
+  "fetchedAt": "2026-10-28T08:05:17+08:00",
   "listUrl": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/",
-  "newerThanStored": true,
-  "previousStoredUrl": null,
+  "newerThanStored": false,
+  "previousStoredUrl": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/202610/t20261010_2858776.shtml",
   "mom": {
     "priorPeriod": "2026-08",
     "priorUrl": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/202609/t20260903_2842556.shtml",
