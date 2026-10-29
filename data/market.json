@@ -4,8 +4,8 @@
   "focusArea": "光谷东",
   "city": "武汉",
   "sample": false,
-  "updatedAt": "2026-10-28T08:06:59+08:00",
-  "updatedLabel": "2026-10-28 08:06（住更局月报+日表）",
+  "updatedAt": "2026-10-29T08:12:56+08:00",
+  "updatedLabel": "2026-10-29 08:12（住更局月报+日表）",
   "referencePrice": {
     "value": 1353,
     "unit": "套",
@@ -42,7 +42,7 @@
   "cityPulse": {
     "title": "光谷东市场脉搏",
     "en": "City Pulse · Wuhan",
-    "status": "2026年9月月报已接入 · 10-27 日表"
+    "status": "2026年9月月报已接入 · 10-28 日表"
   },
   "curatedNewIds": [
     "nh-23d29e",
@@ -58,14 +58,14 @@
     "东湖高新区商品住房成交作为光谷东聚焦的公开行政区代理指标",
     "精选盘名为光谷东真实项目；价格为公开挂牌/在售参考非网签；户型图来自公开售楼资料（示意参考）；地铁/配套距离为步行示意"
   ],
-  "cadence": "每日可运行 scripts/fetch_zgj_stats.py → apply_official_to_market.py → generate-embed.py；有新月报时刷新行情指标。精选盘名为光谷东真实项目，价格为公开挂牌/在售参考（非网签），户型图来自公开售楼资料（示意参考）。每日成交列表页目前为 JS/外链，界面提示「日表暂不可用，已用月报」。",
+  "cadence": "每日可运行 scripts/fetch_zgj_stats.py → apply_official_to_market.py → generate-embed.py；有新月报时刷新行情指标。精选盘名为光谷东真实项目，价格为公开挂牌/在售参考（非网签），户型图来自公开售楼资料（示意参考）。每日成交列表页目前为 JS/外链；日表数字来自 image 核验写入。",
   "disclaimer": "行情指标（全市/东湖高新商品住房成交套数与面积及环比）来自武汉市住房和城市更新局公开月报，由本站脚本抓取汇总；精选盘名为光谷东真实项目；价格为公开挂牌/在售参考非网签；户型图来自公开售楼资料（示意参考）。仅供产品演示，不构成交易或投资建议。备案信息请以住更局公开渠道为准。",
   "official": {
     "period": "2026-09",
     "periodLabel": "2026年9月",
     "publishDate": "2026-10-10 15:15",
     "url": "https://zgj.wuhan.gov.cn/xxgk/xxgkml/sjfb/spzfxysydjcjb/202610/t20261010_2858776.shtml",
-    "fetchedAt": "2026-10-28T08:05:17+08:00",
+    "fetchedAt": "2026-10-29T08:01:21+08:00",
     "cityHousingUnits": 6589,
     "cityHousingAreaSqm": 776793.54,
     "donghuHousingUnits": 1353,
@@ -84,17 +84,17 @@
     "available": true,
     "flag": "daily_ok",
     "messageZh": "日表已接入（网签备案）",
-    "date": "2026-10-27",
-    "title": "2026年10月27日新建商品房网签备案统计情况",
-    "statWindow": "2026-10-26 17:00:00 至 2026-10-27 17:00:00",
-    "cityHousingUnits": 398,
-    "cityHousingAreaSqm": 48164.05,
-    "donghuHousingUnits": 36,
-    "donghuHousingAreaSqm": 4225.15,
-    "detailUrl": "http://119.97.201.20/spfcjtj/Content2.aspx?ID=8BC589049CA64EF3ABBFEE24C7E88AA2",
-    "imageUrl": "http://119.97.201.20/spfcjtj/image.aspx?ID=8BC589049CA64EF3ABBFEE24C7E88AA2",
+    "date": "2026-10-28",
+    "title": "2026年10月28日新建商品房网签备案统计情况",
+    "statWindow": "2026-10-27 17:00:00 至 2026-10-28 17:00:00",
+    "cityHousingUnits": 373,
+    "cityHousingAreaSqm": 45553.72,
+    "donghuHousingUnits": 54,
+    "donghuHousingAreaSqm": 7524.94,
+    "detailUrl": "http://119.97.201.20/spfcjtj/Content2.aspx?ID=763F68DEA5754FC5A19E79F77B91FC54",
+    "imageUrl": "http://119.97.201.20/spfcjtj/image.aspx?ID=763F68DEA5754FC5A19E79F77B91FC54",
     "url": "http://119.97.201.20/spfcjtj/Sectionlist.aspx?pagenum=1",
-    "fetchedAt": "2026-10-28T08:06:59+08:00",
+    "fetchedAt": "2026-10-29T08:11:55+08:00",
     "extractMethod": "image_read_verified"
   },
   "fieldLegend": {
