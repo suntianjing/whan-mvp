@@ -4,8 +4,8 @@
   "focusArea": "光谷东",
   "city": "武汉",
   "sample": false,
-  "updatedAt": "2026-10-29T18:15:14+08:00",
-  "updatedLabel": "2026-10-29 18:15（住更局月报）",
+  "updatedAt": "2026-10-30T18:58:58+08:00",
+  "updatedLabel": "2026-10-30 18:58（住更局月报）",
   "referencePrice": {
     "value": 1353,
     "unit": "套",
@@ -42,7 +42,7 @@
   "cityPulse": {
     "title": "光谷东市场脉搏",
     "en": "City Pulse · Wuhan",
-    "status": "2026年9月月报已接入 · 10-29 日表"
+    "status": "2026年9月月报已接入 · 10-30 日表"
   },
   "curatedNewIds": [
     "nh-23d29e",
@@ -84,17 +84,17 @@
     "available": true,
     "flag": "daily_ok",
     "messageZh": "日表已接入（网签备案）",
-    "date": "2026-10-29",
-    "title": "2026年10月29日新建商品房网签备案统计情况",
-    "statWindow": "2026-10-28 17:00:00 至 2026-10-29 17:00:00",
-    "cityHousingUnits": 284,
-    "cityHousingAreaSqm": 35182.57,
-    "donghuHousingUnits": 49,
-    "donghuHousingAreaSqm": 6438.64,
-    "detailUrl": "http://119.97.201.20/spfcjtj/Content2.aspx?ID=46FDCA0FD0B64E4685F8943CDDE0D70A",
-    "imageUrl": "http://119.97.201.20/spfcjtj/image.aspx?ID=46FDCA0FD0B64E4685F8943CDDE0D70A",
+    "date": "2026-10-30",
+    "title": "2026年10月30日新建商品房网签备案统计情况",
+    "statWindow": "2026-10-29 17:00:00 至 2026-10-30 17:00:00",
+    "cityHousingUnits": 225,
+    "cityHousingAreaSqm": 27894.3,
+    "donghuHousingUnits": 52,
+    "donghuHousingAreaSqm": 6627.61,
+    "detailUrl": "http://119.97.201.20/spfcjtj/Content2.aspx?ID=DB8255DD27214ECE90FCC92CB9B2387A",
+    "imageUrl": "http://119.97.201.20/spfcjtj/image.aspx?ID=DB8255DD27214ECE90FCC92CB9B2387A",
     "url": "http://119.97.201.20/spfcjtj/Sectionlist.aspx?pagenum=1",
-    "fetchedAt": "2026-10-29T18:15:14+08:00",
+    "fetchedAt": "2026-10-30T18:58:58+08:00",
     "extractMethod": "image_read_verified"
   },
   "fieldLegend": {
